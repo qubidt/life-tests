@@ -1,0 +1,160 @@
+==25354== Memcheck, a memory error detector
+==25354== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==25354== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==25354== Command: ./TestLife
+==25354== 
+Running main() from gtest_main.cc
+[==========] Running 58 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 11 tests from CCFixture
+[ RUN      ] CCFixture.cc_constructor_1
+[       OK ] CCFixture.cc_constructor_1 (8 ms)
+[ RUN      ] CCFixture.cc_constructor_2
+[       OK ] CCFixture.cc_constructor_2 (1 ms)
+[ RUN      ] CCFixture.cc_constructor_3
+[       OK ] CCFixture.cc_constructor_3 (1 ms)
+[ RUN      ] CCFixture.cc_process_1
+[       OK ] CCFixture.cc_process_1 (2 ms)
+[ RUN      ] CCFixture.cc_process_2
+[       OK ] CCFixture.cc_process_2 (2 ms)
+[ RUN      ] CCFixture.cc_process_3
+[       OK ] CCFixture.cc_process_3 (2 ms)
+[ RUN      ] CCFixture.cc_is_alive_1
+[       OK ] CCFixture.cc_is_alive_1 (2 ms)
+[ RUN      ] CCFixture.cc_is_alive_2
+[       OK ] CCFixture.cc_is_alive_2 (2 ms)
+[ RUN      ] CCFixture.cc_mutate_1
+[       OK ] CCFixture.cc_mutate_1 (3 ms)
+[ RUN      ] CCFixture.cc_print_1
+[       OK ] CCFixture.cc_print_1 (5 ms)
+[ RUN      ] CCFixture.cc_print_2
+[       OK ] CCFixture.cc_print_2 (4 ms)
+[----------] 11 tests from CCFixture (40 ms total)
+
+[----------] 11 tests from FCFixture
+[ RUN      ] FCFixture.fc_constructor_1
+[       OK ] FCFixture.fc_constructor_1 (2 ms)
+[ RUN      ] FCFixture.fc_constructor_2
+[       OK ] FCFixture.fc_constructor_2 (2 ms)
+[ RUN      ] FCFixture.fc_constructor_3
+[       OK ] FCFixture.fc_constructor_3 (2 ms)
+[ RUN      ] FCFixture.fc_constructor_4
+[       OK ] FCFixture.fc_constructor_4 (2 ms)
+[ RUN      ] FCFixture.fc_process_1
+[       OK ] FCFixture.fc_process_1 (3 ms)
+[ RUN      ] FCFixture.fc_process_2
+[       OK ] FCFixture.fc_process_2 (2 ms)
+[ RUN      ] FCFixture.fc_process_3
+[       OK ] FCFixture.fc_process_3 (2 ms)
+[ RUN      ] FCFixture.fc_is_alive_1
+[       OK ] FCFixture.fc_is_alive_1 (2 ms)
+[ RUN      ] FCFixture.fc_is_alive_2
+[       OK ] FCFixture.fc_is_alive_2 (2 ms)
+[ RUN      ] FCFixture.fc_print_1
+[       OK ] FCFixture.fc_print_1 (2 ms)
+[ RUN      ] FCFixture.fc_print_2
+[       OK ] FCFixture.fc_print_2 (2 ms)
+[----------] 11 tests from FCFixture (25 ms total)
+
+[----------] 21 tests from CFixture
+[ RUN      ] CFixture.c_constructor_1
+[       OK ] CFixture.c_constructor_1 (3 ms)
+[ RUN      ] CFixture.c_constructor_2
+[       OK ] CFixture.c_constructor_2 (3 ms)
+[ RUN      ] CFixture.c_constructor_3
+[       OK ] CFixture.c_constructor_3 (2 ms)
+[ RUN      ] CFixture.c_copy_constructor_1
+[       OK ] CFixture.c_copy_constructor_1 (2 ms)
+[ RUN      ] CFixture.c_copy_constructor_2
+[       OK ] CFixture.c_copy_constructor_2 (3 ms)
+[ RUN      ] CFixture.c_process_1
+[       OK ] CFixture.c_process_1 (3 ms)
+[ RUN      ] CFixture.c_process_2
+[       OK ] CFixture.c_process_2 (2 ms)
+[ RUN      ] CFixture.c_process_3
+[       OK ] CFixture.c_process_3 (2 ms)
+[ RUN      ] CFixture.c_is_alive_1
+[       OK ] CFixture.c_is_alive_1 (2 ms)
+[ RUN      ] CFixture.c_is_alive_2
+[       OK ] CFixture.c_is_alive_2 (2 ms)
+[ RUN      ] CFixture.c_is_alive_3
+[       OK ] CFixture.c_is_alive_3 (2 ms)
+[ RUN      ] CFixture.c_is_alive_4
+[       OK ] CFixture.c_is_alive_4 (2 ms)
+[ RUN      ] CFixture.c_is_alive_5
+[       OK ] CFixture.c_is_alive_5 (2 ms)
+[ RUN      ] CFixture.c_print_1
+[       OK ] CFixture.c_print_1 (3 ms)
+[ RUN      ] CFixture.c_print_2
+[       OK ] CFixture.c_print_2 (2 ms)
+[ RUN      ] CFixture.c_print_3
+[       OK ] CFixture.c_print_3 (3 ms)
+[ RUN      ] CFixture.c_is_conway_1
+[       OK ] CFixture.c_is_conway_1 (2 ms)
+[ RUN      ] CFixture.c_is_conway_2
+[       OK ] CFixture.c_is_conway_2 (2 ms)
+[ RUN      ] CFixture.c_is_conway_3
+[       OK ] CFixture.c_is_conway_3 (2 ms)
+[ RUN      ] CFixture.c_is_conway_4
+[       OK ] CFixture.c_is_conway_4 (2 ms)
+[ RUN      ] CFixture.c_is_conway_5
+[       OK ] CFixture.c_is_conway_5 (2 ms)
+[----------] 21 tests from CFixture (49 ms total)
+
+[----------] 15 tests from LifeFixture
+[ RUN      ] LifeFixture.life_constructor_1
+[       OK ] LifeFixture.life_constructor_1 (26 ms)
+[ RUN      ] LifeFixture.life_constructor_2
+[       OK ] LifeFixture.life_constructor_2 (2 ms)
+[ RUN      ] LifeFixture.life_constructor_3
+[       OK ] LifeFixture.life_constructor_3 (8 ms)
+[ RUN      ] LifeFixture.life_constructor_4
+[       OK ] LifeFixture.life_constructor_4 (3 ms)
+[ RUN      ] LifeFixture.life_print_1
+[       OK ] LifeFixture.life_print_1 (3 ms)
+[ RUN      ] LifeFixture.life_print_2
+[       OK ] LifeFixture.life_print_2 (3 ms)
+[ RUN      ] LifeFixture.life_print_3
+[       OK ] LifeFixture.life_print_3 (3 ms)
+[ RUN      ] LifeFixture.life_run_1
+[       OK ] LifeFixture.life_run_1 (25 ms)
+[ RUN      ] LifeFixture.life_run_2
+[       OK ] LifeFixture.life_run_2 (9 ms)
+[ RUN      ] LifeFixture.life_run_3
+[       OK ] LifeFixture.life_run_3 (4 ms)
+[ RUN      ] LifeFixture.life_run_4
+[       OK ] LifeFixture.life_run_4 (3 ms)
+[ RUN      ] LifeFixture.life_run_5
+[       OK ] LifeFixture.life_run_5 (6 ms)
+[ RUN      ] LifeFixture.life_count_1
+[       OK ] LifeFixture.life_count_1 (2 ms)
+[ RUN      ] LifeFixture.life_count_2
+[       OK ] LifeFixture.life_count_2 (24 ms)
+[ RUN      ] LifeFixture.life_count_3
+[       OK ] LifeFixture.life_count_3 (2 ms)
+[----------] 15 tests from LifeFixture (127 ms total)
+
+[----------] Global test environment tear-down
+[==========] 58 tests from 4 test cases ran. (271 ms total)
+[  PASSED  ] 58 tests.
+==25354== 
+==25354== HEAP SUMMARY:
+==25354==     in use at exit: 0 bytes in 0 blocks
+==25354==   total heap usage: 1,416 allocs, 1,416 frees, 158,268 bytes allocated
+==25354== 
+==25354== All heap blocks were freed -- no leaks are possible
+==25354== 
+==25354== For counts of detected and suppressed errors, rerun with: -v
+==25354== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:94.52% of 146
+Branches executed:97.44% of 156
+Taken at least once:78.85% of 156
+Calls executed:81.76% of 159
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 267
+Branches executed:67.67% of 1460
+Taken at least once:33.90% of 1460
+Calls executed:57.32% of 1708
+Creating 'TestLife.c++.gcov'
