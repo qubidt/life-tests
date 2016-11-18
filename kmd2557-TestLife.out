@@ -1,0 +1,182 @@
+==15618== Memcheck, a memory error detector
+==15618== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==15618== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==15618== Command: ./TestLife
+==15618== 
+Running main() from gtest_main.cc
+[==========] Running 69 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 11 tests from Life
+[ RUN      ] Life.Constructor1
+[       OK ] Life.Constructor1 (17 ms)
+[ RUN      ] Life.Constructor2
+[       OK ] Life.Constructor2 (40 ms)
+[ RUN      ] Life.addCell1
+[       OK ] Life.addCell1 (40 ms)
+[ RUN      ] Life.addCell2
+[       OK ] Life.addCell2 (20 ms)
+[ RUN      ] Life.addCell3
+[       OK ] Life.addCell3 (31 ms)
+[ RUN      ] Life.iterate1
+[       OK ] Life.iterate1 (16 ms)
+[ RUN      ] Life.iterate2
+[       OK ] Life.iterate2 (17 ms)
+[ RUN      ] Life.iterate3
+[       OK ] Life.iterate3 (19 ms)
+[ RUN      ] Life.outOfBounds1
+[       OK ] Life.outOfBounds1 (2 ms)
+[ RUN      ] Life.outOfBounds2
+[       OK ] Life.outOfBounds2 (2 ms)
+[ RUN      ] Life.outOfBounds3
+[       OK ] Life.outOfBounds3 (2 ms)
+[----------] 11 tests from Life (213 ms total)
+
+[----------] 19 tests from ConwayCell
+[ RUN      ] ConwayCell.ConstructDefault
+[       OK ] ConwayCell.ConstructDefault (2 ms)
+[ RUN      ] ConwayCell.ConstructLiveCell
+[       OK ] ConwayCell.ConstructLiveCell (3 ms)
+[ RUN      ] ConwayCell.ConstructDeadCell
+[       OK ] ConwayCell.ConstructDeadCell (2 ms)
+[ RUN      ] ConwayCell.PrintLive
+[       OK ] ConwayCell.PrintLive (7 ms)
+[ RUN      ] ConwayCell.PrintDead
+[       OK ] ConwayCell.PrintDead (3 ms)
+[ RUN      ] ConwayCell.Execute1
+[       OK ] ConwayCell.Execute1 (5 ms)
+[ RUN      ] ConwayCell.Execute2
+[       OK ] ConwayCell.Execute2 (5 ms)
+[ RUN      ] ConwayCell.Execute3
+[       OK ] ConwayCell.Execute3 (4 ms)
+[ RUN      ] ConwayCell.Execute4
+[       OK ] ConwayCell.Execute4 (4 ms)
+[ RUN      ] ConwayCell.Execute5
+[       OK ] ConwayCell.Execute5 (5 ms)
+[ RUN      ] ConwayCell.Execute6
+[       OK ] ConwayCell.Execute6 (4 ms)
+[ RUN      ] ConwayCell.Execute7
+[       OK ] ConwayCell.Execute7 (4 ms)
+[ RUN      ] ConwayCell.Execute8
+[       OK ] ConwayCell.Execute8 (5 ms)
+[ RUN      ] ConwayCell.Execute9
+[       OK ] ConwayCell.Execute9 (2 ms)
+[ RUN      ] ConwayCell.Update1
+[       OK ] ConwayCell.Update1 (2 ms)
+[ RUN      ] ConwayCell.Update2
+[       OK ] ConwayCell.Update2 (3 ms)
+[ RUN      ] ConwayCell.Clone1
+[       OK ] ConwayCell.Clone1 (4 ms)
+[ RUN      ] ConwayCell.Clone2
+[       OK ] ConwayCell.Clone2 (6 ms)
+[ RUN      ] ConwayCell.Evolve
+[       OK ] ConwayCell.Evolve (3 ms)
+[----------] 19 tests from ConwayCell (76 ms total)
+
+[----------] 22 tests from FredkinCell
+[ RUN      ] FredkinCell.ConstructDefault
+[       OK ] FredkinCell.ConstructDefault (3 ms)
+[ RUN      ] FredkinCell.ConstructLiveCell
+[       OK ] FredkinCell.ConstructLiveCell (3 ms)
+[ RUN      ] FredkinCell.ConstructDeadCell
+[       OK ] FredkinCell.ConstructDeadCell (3 ms)
+[ RUN      ] FredkinCell.PrintLive
+[       OK ] FredkinCell.PrintLive (2 ms)
+[ RUN      ] FredkinCell.PrintDead
+[       OK ] FredkinCell.PrintDead (3 ms)
+[ RUN      ] FredkinCell.CopyConstruct1
+[       OK ] FredkinCell.CopyConstruct1 (3 ms)
+[ RUN      ] FredkinCell.CopyConstruct2
+[       OK ] FredkinCell.CopyConstruct2 (3 ms)
+[ RUN      ] FredkinCell.Execute1
+[       OK ] FredkinCell.Execute1 (4 ms)
+[ RUN      ] FredkinCell.Execute2
+[       OK ] FredkinCell.Execute2 (3 ms)
+[ RUN      ] FredkinCell.Execute3
+[       OK ] FredkinCell.Execute3 (4 ms)
+[ RUN      ] FredkinCell.Execute4
+[       OK ] FredkinCell.Execute4 (3 ms)
+[ RUN      ] FredkinCell.Execute5
+[       OK ] FredkinCell.Execute5 (4 ms)
+[ RUN      ] FredkinCell.Execute6
+[       OK ] FredkinCell.Execute6 (3 ms)
+[ RUN      ] FredkinCell.Execute7
+[       OK ] FredkinCell.Execute7 (4 ms)
+[ RUN      ] FredkinCell.Execute8
+[       OK ] FredkinCell.Execute8 (4 ms)
+[ RUN      ] FredkinCell.Execute9
+[       OK ] FredkinCell.Execute9 (2 ms)
+[ RUN      ] FredkinCell.Update1
+[       OK ] FredkinCell.Update1 (4 ms)
+[ RUN      ] FredkinCell.Update2
+[       OK ] FredkinCell.Update2 (3 ms)
+[ RUN      ] FredkinCell.Clone1
+[       OK ] FredkinCell.Clone1 (4 ms)
+[ RUN      ] FredkinCell.Clone2
+[       OK ] FredkinCell.Clone2 (6 ms)
+[ RUN      ] FredkinCell.Evolve1
+[       OK ] FredkinCell.Evolve1 (2 ms)
+[ RUN      ] FredkinCell.Evolve2
+[       OK ] FredkinCell.Evolve2 (3 ms)
+[----------] 22 tests from FredkinCell (73 ms total)
+
+[----------] 17 tests from Cell
+[ RUN      ] Cell.ConstructDefault
+[       OK ] Cell.ConstructDefault (2 ms)
+[ RUN      ] Cell.ConstructLiveConwayCell
+[       OK ] Cell.ConstructLiveConwayCell (2 ms)
+[ RUN      ] Cell.ConstructLiveFredkinCell
+[       OK ] Cell.ConstructLiveFredkinCell (2 ms)
+[ RUN      ] Cell.ConstructDeadConwayCell
+[       OK ] Cell.ConstructDeadConwayCell (3 ms)
+[ RUN      ] Cell.ConstructDeadFredkinCell
+[       OK ] Cell.ConstructDeadFredkinCell (2 ms)
+[ RUN      ] Cell.PrintLiveConway
+[       OK ] Cell.PrintLiveConway (3 ms)
+[ RUN      ] Cell.PrintLiveFredkin
+[       OK ] Cell.PrintLiveFredkin (3 ms)
+[ RUN      ] Cell.PrintDeadConway
+[       OK ] Cell.PrintDeadConway (2 ms)
+[ RUN      ] Cell.PrintDeadFredkin
+[       OK ] Cell.PrintDeadFredkin (3 ms)
+[ RUN      ] Cell.Clone1
+[       OK ] Cell.Clone1 (2 ms)
+[ RUN      ] Cell.Clone2
+[       OK ] Cell.Clone2 (6 ms)
+[ RUN      ] Cell.Execute1
+[       OK ] Cell.Execute1 (6 ms)
+[ RUN      ] Cell.Execute2
+[       OK ] Cell.Execute2 (6 ms)
+[ RUN      ] Cell.Execute3
+[       OK ] Cell.Execute3 (2 ms)
+[ RUN      ] Cell.Evolve1
+[       OK ] Cell.Evolve1 (3 ms)
+[ RUN      ] Cell.Evolve2
+[       OK ] Cell.Evolve2 (4 ms)
+[ RUN      ] Cell.Evolve3
+[       OK ] Cell.Evolve3 (3 ms)
+[----------] 17 tests from Cell (55 ms total)
+
+[----------] Global test environment tear-down
+[==========] 69 tests from 4 test cases ran. (446 ms total)
+[  PASSED  ] 69 tests.
+==15618== 
+==15618== HEAP SUMMARY:
+==15618==     in use at exit: 0 bytes in 0 blocks
+==15618==   total heap usage: 1,874 allocs, 1,874 frees, 245,449 bytes allocated
+==15618== 
+==15618== All heap blocks were freed -- no leaks are possible
+==15618== 
+==15618== For counts of detected and suppressed errors, rerun with: -v
+==15618== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:99.47% of 187
+Branches executed:97.01% of 402
+Taken at least once:76.37% of 402
+Calls executed:89.27% of 289
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:99.30% of 574
+Branches executed:63.90% of 2670
+Taken at least once:31.99% of 2670
+Calls executed:50.20% of 3197
+Creating 'TestLife.c++.gcov'
