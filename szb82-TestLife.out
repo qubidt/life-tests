@@ -1,38 +1,181 @@
-==41100== Memcheck, a memory error detector
-==41100== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
-==41100== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
-==41100== Command: ./TestLife
-==41100==
---41100-- run: /usr/bin/dsymutil "./TestLife"
+==7320== Memcheck, a memory error detector
+==7320== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==7320== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==7320== Command: ./TestLife
+==7320== 
 Running main() from gtest_main.cc
-[==========] Running 1 test from 1 test case.
+[==========] Running 73 tests from 1 test case.
 [----------] Global test environment set-up.
-[----------] 1 test from LifeFixture
-[ RUN      ] LifeFixture.test
-[       OK ] LifeFixture.test (14 ms)
-[----------] 1 test from LifeFixture (25 ms total)
+[----------] 73 tests from LifeFixture
+[ RUN      ] LifeFixture.testACAlive1
+[       OK ] LifeFixture.testACAlive1 (8 ms)
+[ RUN      ] LifeFixture.testACAlive2
+[       OK ] LifeFixture.testACAlive2 (2 ms)
+[ RUN      ] LifeFixture.testACAlive3
+[       OK ] LifeFixture.testACAlive3 (2 ms)
+[ RUN      ] LifeFixture.testIsAlive1
+[       OK ] LifeFixture.testIsAlive1 (2 ms)
+[ RUN      ] LifeFixture.testIsAlive2
+[       OK ] LifeFixture.testIsAlive2 (2 ms)
+[ RUN      ] LifeFixture.testIsAlive3
+[       OK ] LifeFixture.testIsAlive3 (2 ms)
+[ RUN      ] LifeFixture.testResurrect1
+[       OK ] LifeFixture.testResurrect1 (2 ms)
+[ RUN      ] LifeFixture.testResurrect2
+[       OK ] LifeFixture.testResurrect2 (2 ms)
+[ RUN      ] LifeFixture.testResurrect3
+[       OK ] LifeFixture.testResurrect3 (2 ms)
+[ RUN      ] LifeFixture.testKill1
+[       OK ] LifeFixture.testKill1 (2 ms)
+[ RUN      ] LifeFixture.testKill2
+[       OK ] LifeFixture.testKill2 (3 ms)
+[ RUN      ] LifeFixture.testKill3
+[       OK ] LifeFixture.testKill3 (2 ms)
+[ RUN      ] LifeFixture.testConwayOpFredkin1
+[       OK ] LifeFixture.testConwayOpFredkin1 (3 ms)
+[ RUN      ] LifeFixture.testConwayOpFredkin2
+[       OK ] LifeFixture.testConwayOpFredkin2 (2 ms)
+[ RUN      ] LifeFixture.testConwayOpFredkin3
+[       OK ] LifeFixture.testConwayOpFredkin3 (3 ms)
+[ RUN      ] LifeFixture.testConwayOpFredkin4
+[       OK ] LifeFixture.testConwayOpFredkin4 (3 ms)
+[ RUN      ] LifeFixture.testConwayClone1
+[       OK ] LifeFixture.testConwayClone1 (2 ms)
+[ RUN      ] LifeFixture.testConwayClone2
+[       OK ] LifeFixture.testConwayClone2 (3 ms)
+[ RUN      ] LifeFixture.testConwayClone3
+[       OK ] LifeFixture.testConwayClone3 (2 ms)
+[ RUN      ] LifeFixture.testConwayMutatable
+[       OK ] LifeFixture.testConwayMutatable (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction0
+[       OK ] LifeFixture.testConwayDoAction0 (5 ms)
+[ RUN      ] LifeFixture.testConwayDoAction1
+[       OK ] LifeFixture.testConwayDoAction1 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction2
+[       OK ] LifeFixture.testConwayDoAction2 (3 ms)
+[ RUN      ] LifeFixture.testConwayDoAction3
+[       OK ] LifeFixture.testConwayDoAction3 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction4
+[       OK ] LifeFixture.testConwayDoAction4 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction5
+[       OK ] LifeFixture.testConwayDoAction5 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction6
+[       OK ] LifeFixture.testConwayDoAction6 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction7
+[       OK ] LifeFixture.testConwayDoAction7 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction8
+[       OK ] LifeFixture.testConwayDoAction8 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction9
+[       OK ] LifeFixture.testConwayDoAction9 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction10
+[       OK ] LifeFixture.testConwayDoAction10 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction11
+[       OK ] LifeFixture.testConwayDoAction11 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction12
+[       OK ] LifeFixture.testConwayDoAction12 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction13
+[       OK ] LifeFixture.testConwayDoAction13 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction14
+[       OK ] LifeFixture.testConwayDoAction14 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction15
+[       OK ] LifeFixture.testConwayDoAction15 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction16
+[       OK ] LifeFixture.testConwayDoAction16 (2 ms)
+[ RUN      ] LifeFixture.testConwayDoAction17
+[       OK ] LifeFixture.testConwayDoAction17 (2 ms)
+[ RUN      ] LifeFixture.testFredkinOpConway1
+[       OK ] LifeFixture.testFredkinOpConway1 (3 ms)
+[ RUN      ] LifeFixture.testFredkinOpConway2
+[       OK ] LifeFixture.testFredkinOpConway2 (2 ms)
+[ RUN      ] LifeFixture.testFredkinClone1
+[       OK ] LifeFixture.testFredkinClone1 (2 ms)
+[ RUN      ] LifeFixture.testFredkinClone2
+[       OK ] LifeFixture.testFredkinClone2 (3 ms)
+[ RUN      ] LifeFixture.testFredkinClone3
+[       OK ] LifeFixture.testFredkinClone3 (2 ms)
+[ RUN      ] LifeFixture.testFredkinMutatable
+[       OK ] LifeFixture.testFredkinMutatable (2 ms)
+[ RUN      ] LifeFixture.testFredkinDoAction0
+[       OK ] LifeFixture.testFredkinDoAction0 (2 ms)
+[ RUN      ] LifeFixture.testFredkinDoAction1
+[       OK ] LifeFixture.testFredkinDoAction1 (3 ms)
+[ RUN      ] LifeFixture.testFredkinDoAction2
+[       OK ] LifeFixture.testFredkinDoAction2 (2 ms)
+[ RUN      ] LifeFixture.testFredkinDoAction3
+[       OK ] LifeFixture.testFredkinDoAction3 (2 ms)
+[ RUN      ] LifeFixture.testFredkinDoAction4
+[       OK ] LifeFixture.testFredkinDoAction4 (3 ms)
+[ RUN      ] LifeFixture.testFredkinDoAction5
+[       OK ] LifeFixture.testFredkinDoAction5 (2 ms)
+[ RUN      ] LifeFixture.testFredkinDoAction6
+[       OK ] LifeFixture.testFredkinDoAction6 (3 ms)
+[ RUN      ] LifeFixture.testFredkinDoAction7
+[       OK ] LifeFixture.testFredkinDoAction7 (2 ms)
+[ RUN      ] LifeFixture.testFredkinDoAction8
+[       OK ] LifeFixture.testFredkinDoAction8 (2 ms)
+[ RUN      ] LifeFixture.testFredkinDoAction9
+[       OK ] LifeFixture.testFredkinDoAction9 (2 ms)
+[ RUN      ] LifeFixture.testFredkinDoAction10
+[       OK ] LifeFixture.testFredkinDoAction10 (6 ms)
+[ RUN      ] LifeFixture.testFredkinDoAction11
+[       OK ] LifeFixture.testFredkinDoAction11 (3 ms)
+[ RUN      ] LifeFixture.testCellOpConway1
+[       OK ] LifeFixture.testCellOpConway1 (4 ms)
+[ RUN      ] LifeFixture.testCellOpConway2
+[       OK ] LifeFixture.testCellOpConway2 (3 ms)
+[ RUN      ] LifeFixture.testCellOpConway3
+[       OK ] LifeFixture.testCellOpConway3 (3 ms)
+[ RUN      ] LifeFixture.testCellOpConway4
+[       OK ] LifeFixture.testCellOpConway4 (3 ms)
+[ RUN      ] LifeFixture.testCellOpFredkin1
+[       OK ] LifeFixture.testCellOpFredkin1 (4 ms)
+[ RUN      ] LifeFixture.testCellOpFredkin2
+[       OK ] LifeFixture.testCellOpFredkin2 (3 ms)
+[ RUN      ] LifeFixture.testCellOpFredkin3
+[       OK ] LifeFixture.testCellOpFredkin3 (3 ms)
+[ RUN      ] LifeFixture.testCellOpFredkin4
+[       OK ] LifeFixture.testCellOpFredkin4 (3 ms)
+[ RUN      ] LifeFixture.testCellisAlive1
+[       OK ] LifeFixture.testCellisAlive1 (2 ms)
+[ RUN      ] LifeFixture.testCellisAlive2
+[       OK ] LifeFixture.testCellisAlive2 (3 ms)
+[ RUN      ] LifeFixture.testCellResurrect1
+[       OK ] LifeFixture.testCellResurrect1 (2 ms)
+[ RUN      ] LifeFixture.testCellResurrect2
+[       OK ] LifeFixture.testCellResurrect2 (3 ms)
+[ RUN      ] LifeFixture.testCellResurrect3
+[       OK ] LifeFixture.testCellResurrect3 (3 ms)
+[ RUN      ] LifeFixture.testCellKill1
+[       OK ] LifeFixture.testCellKill1 (2 ms)
+[ RUN      ] LifeFixture.testCellKill2
+[       OK ] LifeFixture.testCellKill2 (3 ms)
+[ RUN      ] LifeFixture.testCellKill3
+[       OK ] LifeFixture.testCellKill3 (3 ms)
+[ RUN      ] LifeFixture.testCellMutatable
+[       OK ] LifeFixture.testCellMutatable (2 ms)
+[----------] 73 tests from LifeFixture (197 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test case ran. (67 ms total)
-[  PASSED  ] 1 test.
-==41100==
-==41100== HEAP SUMMARY:
-==41100==     in use at exit: 26,417 bytes in 196 blocks
-==41100==   total heap usage: 364 allocs, 168 frees, 182,465 bytes allocated
-==41100==
-==41100== LEAK SUMMARY:
-==41100==    definitely lost: 0 bytes in 0 blocks
-==41100==    indirectly lost: 0 bytes in 0 blocks
-==41100==      possibly lost: 2,064 bytes in 1 blocks
-==41100==    still reachable: 0 bytes in 0 blocks
-==41100==         suppressed: 24,353 bytes in 195 blocks
-==41100== Rerun with --leak-check=full to see details of leaked memory
-==41100==
-==41100== For counts of detected and suppressed errors, rerun with: -v
-==41100== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[==========] 73 tests from 1 test case ran. (225 ms total)
+[  PASSED  ] 73 tests.
+==7320== 
+==7320== HEAP SUMMARY:
+==7320==     in use at exit: 0 bytes in 0 blocks
+==7320==   total heap usage: 1,342 allocs, 1,342 frees, 160,686 bytes allocated
+==7320== 
+==7320== All heap blocks were freed -- no leaks are possible
+==7320== 
+==7320== For counts of detected and suppressed errors, rerun with: -v
+==7320== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:81.43% of 70
+Branches executed:80.95% of 42
+Taken at least once:69.05% of 42
+Calls executed:76.19% of 42
+Creating 'Life.h.gcov'
 File 'TestLife.c++'
-Lines executed:100.00% of 2
-Branches executed:52.94% of 17
-Taken at least once:23.53% of 17
-No calls
-TestLife.c++:creating 'TestLife.c++.gcov'
+Lines executed:100.00% of 376
+Branches executed:60.05% of 1462
+Taken at least once:30.03% of 1462
+Calls executed:55.23% of 2093
+Creating 'TestLife.c++.gcov'
