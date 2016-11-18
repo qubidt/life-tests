@@ -1,0 +1,221 @@
+==21061== Memcheck, a memory error detector
+==21061== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==21061== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==21061== Command: ./TestLife
+==21061== 
+Running main() from gtest_main.cc
+[==========] Running 63 tests from 19 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from AbstractCell_isAlive
+[ RUN      ] AbstractCell_isAlive.isAlive_1
+[       OK ] AbstractCell_isAlive.isAlive_1 (17 ms)
+[ RUN      ] AbstractCell_isAlive.isAlive_2
+[       OK ] AbstractCell_isAlive.isAlive_2 (12 ms)
+[ RUN      ] AbstractCell_isAlive.isAlive_3
+[       OK ] AbstractCell_isAlive.isAlive_3 (13 ms)
+[----------] 3 tests from AbstractCell_isAlive (48 ms total)
+
+[----------] 2 tests from AbstractCell_shouldSwitch
+[ RUN      ] AbstractCell_shouldSwitch.shouldSwitch_1
+[       OK ] AbstractCell_shouldSwitch.shouldSwitch_1 (3 ms)
+[ RUN      ] AbstractCell_shouldSwitch.shouldSwitch_2
+[       OK ] AbstractCell_shouldSwitch.shouldSwitch_2 (2 ms)
+[----------] 2 tests from AbstractCell_shouldSwitch (5 ms total)
+
+[----------] 3 tests from ConwayCell_Clone
+[ RUN      ] ConwayCell_Clone.clone_1
+[       OK ] ConwayCell_Clone.clone_1 (4 ms)
+[ RUN      ] ConwayCell_Clone.clone_2
+[       OK ] ConwayCell_Clone.clone_2 (2 ms)
+[ RUN      ] ConwayCell_Clone.clone_3
+[       OK ] ConwayCell_Clone.clone_3 (3 ms)
+[----------] 3 tests from ConwayCell_Clone (9 ms total)
+
+[----------] 7 tests from ConwayCell_takeTurn
+[ RUN      ] ConwayCell_takeTurn.takeTurn_1
+[       OK ] ConwayCell_takeTurn.takeTurn_1 (3 ms)
+[ RUN      ] ConwayCell_takeTurn.takeTurn_2
+[       OK ] ConwayCell_takeTurn.takeTurn_2 (3 ms)
+[ RUN      ] ConwayCell_takeTurn.takeTurn_3
+[       OK ] ConwayCell_takeTurn.takeTurn_3 (3 ms)
+[ RUN      ] ConwayCell_takeTurn.takeTurn_4
+[       OK ] ConwayCell_takeTurn.takeTurn_4 (2 ms)
+[ RUN      ] ConwayCell_takeTurn.takeTurn_5
+[       OK ] ConwayCell_takeTurn.takeTurn_5 (3 ms)
+[ RUN      ] ConwayCell_takeTurn.takeTurn_6
+[       OK ] ConwayCell_takeTurn.takeTurn_6 (2 ms)
+[ RUN      ] ConwayCell_takeTurn.takeTurn_7
+[       OK ] ConwayCell_takeTurn.takeTurn_7 (3 ms)
+[----------] 7 tests from ConwayCell_takeTurn (19 ms total)
+
+[----------] 2 tests from ConwayCell_Print
+[ RUN      ] ConwayCell_Print.print_1
+[       OK ] ConwayCell_Print.print_1 (6 ms)
+[ RUN      ] ConwayCell_Print.print_2
+[       OK ] ConwayCell_Print.print_2 (2 ms)
+[----------] 2 tests from ConwayCell_Print (8 ms total)
+
+[----------] 3 tests from FredkinCell_Clone
+[ RUN      ] FredkinCell_Clone.clone_1
+[       OK ] FredkinCell_Clone.clone_1 (3 ms)
+[ RUN      ] FredkinCell_Clone.clone_2
+[       OK ] FredkinCell_Clone.clone_2 (3 ms)
+[ RUN      ] FredkinCell_Clone.clone_3
+[       OK ] FredkinCell_Clone.clone_3 (3 ms)
+[----------] 3 tests from FredkinCell_Clone (9 ms total)
+
+[----------] 4 tests from FredkinCell_shouldSwitch
+[ RUN      ] FredkinCell_shouldSwitch.shouldSwitch_1
+[       OK ] FredkinCell_shouldSwitch.shouldSwitch_1 (3 ms)
+[ RUN      ] FredkinCell_shouldSwitch.shouldSwitch_2
+[       OK ] FredkinCell_shouldSwitch.shouldSwitch_2 (2 ms)
+[ RUN      ] FredkinCell_shouldSwitch.shouldSwitch_3
+[       OK ] FredkinCell_shouldSwitch.shouldSwitch_3 (2 ms)
+[ RUN      ] FredkinCell_shouldSwitch.shouldSwitch_4
+[       OK ] FredkinCell_shouldSwitch.shouldSwitch_4 (2 ms)
+[----------] 4 tests from FredkinCell_shouldSwitch (9 ms total)
+
+[----------] 5 tests from FredkinCell_takeTurn
+[ RUN      ] FredkinCell_takeTurn.takeTurn_1
+[       OK ] FredkinCell_takeTurn.takeTurn_1 (3 ms)
+[ RUN      ] FredkinCell_takeTurn.takeTurn_2
+[       OK ] FredkinCell_takeTurn.takeTurn_2 (3 ms)
+[ RUN      ] FredkinCell_takeTurn.takeTurn_3
+[       OK ] FredkinCell_takeTurn.takeTurn_3 (2 ms)
+[ RUN      ] FredkinCell_takeTurn.takeTurn_4
+[       OK ] FredkinCell_takeTurn.takeTurn_4 (3 ms)
+[ RUN      ] FredkinCell_takeTurn.takeTurn_5
+[       OK ] FredkinCell_takeTurn.takeTurn_5 (2 ms)
+[----------] 5 tests from FredkinCell_takeTurn (13 ms total)
+
+[----------] 3 tests from FredkinCell_Print
+[ RUN      ] FredkinCell_Print.print_1
+[       OK ] FredkinCell_Print.print_1 (3 ms)
+[ RUN      ] FredkinCell_Print.print_2
+[       OK ] FredkinCell_Print.print_2 (2 ms)
+[ RUN      ] FredkinCell_Print.print_3
+[       OK ] FredkinCell_Print.print_3 (3 ms)
+[----------] 3 tests from FredkinCell_Print (8 ms total)
+
+[----------] 3 tests from Cell_Constructor
+[ RUN      ] Cell_Constructor.cell_constructor_1
+[       OK ] Cell_Constructor.cell_constructor_1 (3 ms)
+[ RUN      ] Cell_Constructor.cell_constructor_2
+[       OK ] Cell_Constructor.cell_constructor_2 (3 ms)
+[ RUN      ] Cell_Constructor.cell_constructor_3
+[       OK ] Cell_Constructor.cell_constructor_3 (2 ms)
+[----------] 3 tests from Cell_Constructor (8 ms total)
+
+[----------] 3 tests from Cell_Clone
+[ RUN      ] Cell_Clone.clone_1
+[       OK ] Cell_Clone.clone_1 (2 ms)
+[ RUN      ] Cell_Clone.clone_2
+[       OK ] Cell_Clone.clone_2 (2 ms)
+[ RUN      ] Cell_Clone.clone_3
+[       OK ] Cell_Clone.clone_3 (2 ms)
+[----------] 3 tests from Cell_Clone (7 ms total)
+
+[----------] 3 tests from CellCell_takeTurn
+[ RUN      ] CellCell_takeTurn.takeTurn_1
+[       OK ] CellCell_takeTurn.takeTurn_1 (3 ms)
+[ RUN      ] CellCell_takeTurn.takeTurn_2
+[       OK ] CellCell_takeTurn.takeTurn_2 (3 ms)
+[ RUN      ] CellCell_takeTurn.takeTurn_3
+[       OK ] CellCell_takeTurn.takeTurn_3 (2 ms)
+[----------] 3 tests from CellCell_takeTurn (8 ms total)
+
+[----------] 3 tests from Cell_isAlive
+[ RUN      ] Cell_isAlive.isAlive_1
+[       OK ] Cell_isAlive.isAlive_1 (2 ms)
+[ RUN      ] Cell_isAlive.isAlive_2
+[       OK ] Cell_isAlive.isAlive_2 (2 ms)
+[ RUN      ] Cell_isAlive.isAlive_3
+[       OK ] Cell_isAlive.isAlive_3 (2 ms)
+[----------] 3 tests from Cell_isAlive (6 ms total)
+
+[----------] 4 tests from CellCell_Print
+[ RUN      ] CellCell_Print.print_1
+[       OK ] CellCell_Print.print_1 (2 ms)
+[ RUN      ] CellCell_Print.print_2
+[       OK ] CellCell_Print.print_2 (3 ms)
+[ RUN      ] CellCell_Print.print_3
+[       OK ] CellCell_Print.print_3 (3 ms)
+[ RUN      ] CellCell_Print.print_4
+[       OK ] CellCell_Print.print_4 (2 ms)
+[----------] 4 tests from CellCell_Print (11 ms total)
+
+[----------] 3 tests from Life_AddCell
+[ RUN      ] Life_AddCell.addCell_1
+[       OK ] Life_AddCell.addCell_1 (2 ms)
+[ RUN      ] Life_AddCell.addCell_2
+[       OK ] Life_AddCell.addCell_2 (2 ms)
+[ RUN      ] Life_AddCell.addCell_3
+[       OK ] Life_AddCell.addCell_3 (2 ms)
+[----------] 3 tests from Life_AddCell (6 ms total)
+
+[----------] 3 tests from Life_Simulate
+[ RUN      ] Life_Simulate.simulate_1
+[       OK ] Life_Simulate.simulate_1 (20 ms)
+[ RUN      ] Life_Simulate.simulate_2
+[       OK ] Life_Simulate.simulate_2 (20 ms)
+[ RUN      ] Life_Simulate.simulate_3
+[       OK ] Life_Simulate.simulate_3 (20 ms)
+[----------] 3 tests from Life_Simulate (60 ms total)
+
+[----------] 3 tests from Life_populationCount
+[ RUN      ] Life_populationCount.populationCount_1
+[       OK ] Life_populationCount.populationCount_1 (3 ms)
+[ RUN      ] Life_populationCount.populationCount_2
+[       OK ] Life_populationCount.populationCount_2 (3 ms)
+[ RUN      ] Life_populationCount.populationCount_3
+[       OK ] Life_populationCount.populationCount_3 (2 ms)
+[----------] 3 tests from Life_populationCount (8 ms total)
+
+[----------] 3 tests from Life_Print
+[ RUN      ] Life_Print.print_1
+[       OK ] Life_Print.print_1 (7 ms)
+[ RUN      ] Life_Print.print_2
+[       OK ] Life_Print.print_2 (5 ms)
+[ RUN      ] Life_Print.print_3
+[       OK ] Life_Print.print_3 (5 ms)
+[----------] 3 tests from Life_Print (17 ms total)
+
+[----------] 3 tests from Life_At
+[ RUN      ] Life_At.at_1
+[       OK ] Life_At.at_1 (4 ms)
+[ RUN      ] Life_At.at_2
+[       OK ] Life_At.at_2 (3 ms)
+[ RUN      ] Life_At.at_3
+[       OK ] Life_At.at_3 (3 ms)
+[----------] 3 tests from Life_At (11 ms total)
+
+[----------] Global test environment tear-down
+[==========] 63 tests from 19 test cases ran. (299 ms total)
+[  PASSED  ] 63 tests.
+==21061== 
+==21061== HEAP SUMMARY:
+==21061==     in use at exit: 3,720 bytes in 267 blocks
+==21061==   total heap usage: 2,036 allocs, 1,769 frees, 217,017 bytes allocated
+==21061== 
+==21061== LEAK SUMMARY:
+==21061==    definitely lost: 2,616 bytes in 198 blocks
+==21061==    indirectly lost: 1,104 bytes in 69 blocks
+==21061==      possibly lost: 0 bytes in 0 blocks
+==21061==    still reachable: 0 bytes in 0 blocks
+==21061==         suppressed: 0 bytes in 0 blocks
+==21061== Rerun with --leak-check=full to see details of leaked memory
+==21061== 
+==21061== For counts of detected and suppressed errors, rerun with: -v
+==21061== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.c++'
+Lines executed:94.21% of 121
+Branches executed:100.00% of 266
+Taken at least once:91.35% of 266
+Calls executed:90.18% of 163
+Creating 'Life.c++.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 472
+Branches executed:69.90% of 2312
+Taken at least once:34.95% of 2312
+Calls executed:55.80% of 2457
+Creating 'TestLife.c++.gcov'
