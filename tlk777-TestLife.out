@@ -1,62 +1,146 @@
-==3280== Memcheck, a memory error detector
-==3280== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
-==3280== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
-==3280== Command: ./TestLife
-==3280== 
+==31160== Memcheck, a memory error detector
+==31160== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==31160== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==31160== Command: ./TestLife
+==31160== 
 Running main() from gtest_main.cc
-[==========] Running 12 tests from 2 test cases.
+[==========] Running 48 tests from 4 test cases.
 [----------] Global test environment set-up.
-[----------] 6 tests from ConwayCell
+[----------] 15 tests from ConwayCell
 [ RUN      ] ConwayCell.input1
 [       OK ] ConwayCell.input1 (10 ms)
 [ RUN      ] ConwayCell.input2
-[       OK ] ConwayCell.input2 (2 ms)
+[       OK ] ConwayCell.input2 (3 ms)
 [ RUN      ] ConwayCell.input3
 [       OK ] ConwayCell.input3 (2 ms)
+[ RUN      ] ConwayCell.output1
+[       OK ] ConwayCell.output1 (4 ms)
+[ RUN      ] ConwayCell.output2
+[       OK ] ConwayCell.output2 (3 ms)
+[ RUN      ] ConwayCell.output3
+[       OK ] ConwayCell.output3 (2 ms)
 [ RUN      ] ConwayCell.evolve1
 [       OK ] ConwayCell.evolve1 (2 ms)
 [ RUN      ] ConwayCell.evolve2
 [       OK ] ConwayCell.evolve2 (2 ms)
 [ RUN      ] ConwayCell.evolve3
-[       OK ] ConwayCell.evolve3 (2 ms)
-[----------] 6 tests from ConwayCell (29 ms total)
+[       OK ] ConwayCell.evolve3 (3 ms)
+[ RUN      ] ConwayCell.life1
+[       OK ] ConwayCell.life1 (2 ms)
+[ RUN      ] ConwayCell.life2
+[       OK ] ConwayCell.life2 (2 ms)
+[ RUN      ] ConwayCell.life3
+[       OK ] ConwayCell.life3 (2 ms)
+[ RUN      ] ConwayCell.neighbors1
+[       OK ] ConwayCell.neighbors1 (16 ms)
+[ RUN      ] ConwayCell.neighbors2
+[       OK ] ConwayCell.neighbors2 (4 ms)
+[ RUN      ] ConwayCell.neighbors3
+[       OK ] ConwayCell.neighbors3 (4 ms)
+[----------] 15 tests from ConwayCell (67 ms total)
 
-[----------] 6 tests from FredkinCell
+[----------] 15 tests from FredkinCell
 [ RUN      ] FredkinCell.input1
-[       OK ] FredkinCell.input1 (2 ms)
+[       OK ] FredkinCell.input1 (3 ms)
 [ RUN      ] FredkinCell.input2
-[       OK ] FredkinCell.input2 (3 ms)
+[       OK ] FredkinCell.input2 (2 ms)
 [ RUN      ] FredkinCell.input3
-[       OK ] FredkinCell.input3 (2 ms)
+[       OK ] FredkinCell.input3 (3 ms)
+[ RUN      ] FredkinCell.output1
+[       OK ] FredkinCell.output1 (2 ms)
+[ RUN      ] FredkinCell.output2
+[       OK ] FredkinCell.output2 (3 ms)
+[ RUN      ] FredkinCell.output3
+[       OK ] FredkinCell.output3 (2 ms)
 [ RUN      ] FredkinCell.evolve1
-[       OK ] FredkinCell.evolve1 (3 ms)
+[       OK ] FredkinCell.evolve1 (2 ms)
 [ RUN      ] FredkinCell.evolve2
 [       OK ] FredkinCell.evolve2 (2 ms)
 [ RUN      ] FredkinCell.evolve3
 [       OK ] FredkinCell.evolve3 (2 ms)
-[----------] 6 tests from FredkinCell (14 ms total)
+[ RUN      ] FredkinCell.life1
+[       OK ] FredkinCell.life1 (2 ms)
+[ RUN      ] FredkinCell.life2
+[       OK ] FredkinCell.life2 (2 ms)
+[ RUN      ] FredkinCell.life3
+[       OK ] FredkinCell.life3 (2 ms)
+[ RUN      ] FredkinCell.neighbors1
+[       OK ] FredkinCell.neighbors1 (3 ms)
+[ RUN      ] FredkinCell.neighbors2
+[       OK ] FredkinCell.neighbors2 (4 ms)
+[ RUN      ] FredkinCell.neighbors3
+[       OK ] FredkinCell.neighbors3 (3 ms)
+[----------] 15 tests from FredkinCell (38 ms total)
+
+[----------] 15 tests from Cell
+[ RUN      ] Cell.input1
+[       OK ] Cell.input1 (3 ms)
+[ RUN      ] Cell.input2
+[       OK ] Cell.input2 (4 ms)
+[ RUN      ] Cell.input3
+[       OK ] Cell.input3 (2 ms)
+[ RUN      ] Cell.output1
+[       OK ] Cell.output1 (3 ms)
+[ RUN      ] Cell.output2
+[       OK ] Cell.output2 (3 ms)
+[ RUN      ] Cell.evolve1
+[       OK ] Cell.evolve1 (2 ms)
+[ RUN      ] Cell.evolve2
+[       OK ] Cell.evolve2 (3 ms)
+[ RUN      ] Cell.evolve3
+[       OK ] Cell.evolve3 (2 ms)
+[ RUN      ] Cell.life1
+[       OK ] Cell.life1 (2 ms)
+[ RUN      ] Cell.life2
+[       OK ] Cell.life2 (2 ms)
+[ RUN      ] Cell.life3
+[       OK ] Cell.life3 (3 ms)
+[ RUN      ] Cell.neighbors1
+[       OK ] Cell.neighbors1 (3 ms)
+[ RUN      ] Cell.neighbors2
+[       OK ] Cell.neighbors2 (4 ms)
+[ RUN      ] Cell.neighbors3
+[       OK ] Cell.neighbors3 (4 ms)
+[ RUN      ] Cell.change
+[       OK ] Cell.change (3 ms)
+[----------] 15 tests from Cell (44 ms total)
+
+[----------] 3 tests from Life
+[ RUN      ] Life.count1
+[       OK ] Life.count1 (46 ms)
+[ RUN      ] Life.count2
+[       OK ] Life.count2 (43 ms)
+[ RUN      ] Life.count3
+[       OK ] Life.count3 (44 ms)
+[----------] 3 tests from Life (133 ms total)
 
 [----------] Global test environment tear-down
-[==========] 12 tests from 2 test cases ran. (68 ms total)
-[  PASSED  ] 12 tests.
-==3280== 
-==3280== HEAP SUMMARY:
-==3280==     in use at exit: 0 bytes in 0 blocks
-==3280==   total heap usage: 428 allocs, 428 frees, 65,364 bytes allocated
-==3280== 
-==3280== All heap blocks were freed -- no leaks are possible
-==3280== 
-==3280== For counts of detected and suppressed errors, rerun with: -v
-==3280== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[==========] 48 tests from 4 test cases ran. (306 ms total)
+[  PASSED  ] 48 tests.
+==31160== 
+==31160== HEAP SUMMARY:
+==31160==     in use at exit: 32 bytes in 2 blocks
+==31160==   total heap usage: 1,178 allocs, 1,176 frees, 135,701 bytes allocated
+==31160== 
+==31160== LEAK SUMMARY:
+==31160==    definitely lost: 32 bytes in 2 blocks
+==31160==    indirectly lost: 0 bytes in 0 blocks
+==31160==      possibly lost: 0 bytes in 0 blocks
+==31160==    still reachable: 0 bytes in 0 blocks
+==31160==         suppressed: 0 bytes in 0 blocks
+==31160== Rerun with --leak-check=full to see details of leaked memory
+==31160== 
+==31160== For counts of detected and suppressed errors, rerun with: -v
+==31160== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 File 'Life.h'
-Lines executed:25.85% of 147
-Branches executed:14.13% of 184
-Taken at least once:10.33% of 184
-Calls executed:2.78% of 216
+Lines executed:74.74% of 190
+Branches executed:75.00% of 264
+Taken at least once:44.70% of 264
+Calls executed:52.56% of 293
 Creating 'Life.h.gcov'
 File 'TestLife.c++'
-Lines executed:100.00% of 60
-Branches executed:64.18% of 268
-Taken at least once:32.09% of 268
-Calls executed:53.85% of 403
+Lines executed:100.00% of 264
+Branches executed:69.72% of 1268
+Taken at least once:34.86% of 1268
+Calls executed:55.28% of 1677
 Creating 'TestLife.c++.gcov'
