@@ -27,7 +27,7 @@ TEST(LifeFixture, LifeConstructorTest1) {
 	istringstream input("...*.*...*\n...*.*...*\n...*.*...*\n");
     Life<ConwayCell> life(3, 10, input);
     output << life;
-    ASSERT_EQ(input.str(), output.str());
+    ASSERT_EQ("Population = 9.\n"+input.str(), output.str());
 }
 
 TEST(LifeFixture, LifeConstructorTest2) {
@@ -35,7 +35,7 @@ TEST(LifeFixture, LifeConstructorTest2) {
 	istringstream input("---0-0----\n---0-0----\n---0-0----\n");
     Life<FredkinCell> life(3, 10, input);
     output << life;
-    ASSERT_EQ(input.str(), output.str());
+    ASSERT_EQ("Population = 6.\n"+input.str(), output.str());
 }
 
 TEST(LifeFixture, LifeConstructorTest3) {
@@ -43,7 +43,7 @@ TEST(LifeFixture, LifeConstructorTest3) {
 	istringstream input("-\n");
     Life<FredkinCell> life(1, 1, input);
     output << life;
-    ASSERT_EQ(input.str(), output.str());
+    ASSERT_EQ("Population = 0.\n"+input.str(), output.str());
 }
 
 TEST(LifeFixture, LifeConstructorTest4) {
@@ -51,7 +51,7 @@ TEST(LifeFixture, LifeConstructorTest4) {
 	istringstream input(".\n");
     Life<ConwayCell> life(1, 1, input);
     output << life;
-    ASSERT_EQ(input.str(), output.str());
+    ASSERT_EQ("Population = 0.\n"+input.str(), output.str());
 }
 
 TEST(LifeFixture, LifeConstructorTest5) {
@@ -59,7 +59,7 @@ TEST(LifeFixture, LifeConstructorTest5) {
 	istringstream input("-\n");
     Life<Cell> life(1, 1, input);
     output << life;
-    ASSERT_EQ(input.str(), output.str());
+    ASSERT_EQ("Population = 0.\n"+input.str(), output.str());
 }
 
 TEST(LifeFixture, LifeConstructorTest6) {
@@ -67,7 +67,7 @@ TEST(LifeFixture, LifeConstructorTest6) {
 	istringstream input("0\n");
     Life<Cell> life(1, 1, input);
     output << life;
-    ASSERT_EQ(input.str(), output.str());
+    ASSERT_EQ("Population = 1.\n"+input.str(), output.str());
 }
 
 TEST(LifeFixture, LifeConstructorTest7) {
@@ -75,7 +75,7 @@ TEST(LifeFixture, LifeConstructorTest7) {
 	istringstream input("-0\n");
     Life<Cell> life(1, 2, input);
     output << life;
-    ASSERT_EQ(input.str(), output.str());
+    ASSERT_EQ("Population = 1.\n"+input.str(), output.str());
 }
 
 TEST(LifeFixture, LifeConstructorTest8) {
@@ -83,7 +83,7 @@ TEST(LifeFixture, LifeConstructorTest8) {
 	istringstream input("0-\n");
     Life<Cell> life(1, 2, input);
     output << life;
-    ASSERT_EQ(input.str(), output.str());
+    ASSERT_EQ("Population = 1.\n"+input.str(), output.str());
 }
 
 TEST(LifeFixture, LifeConstructorTest9) {
@@ -91,7 +91,7 @@ TEST(LifeFixture, LifeConstructorTest9) {
 	istringstream input("--\n");
     Life<Cell> life(1, 2, input);
     output << life;
-    ASSERT_EQ(input.str(), output.str());
+    ASSERT_EQ("Population = 0.\n"+input.str(), output.str());
 }
 
 TEST(LifeFixture, LifeConstructorTest10) {
@@ -99,7 +99,7 @@ TEST(LifeFixture, LifeConstructorTest10) {
 	istringstream input("00\n");
     Life<Cell> life(1, 2, input);
     output << life;
-    ASSERT_EQ(input.str(), output.str());
+    ASSERT_EQ("Population = 2.\n"+input.str(), output.str());
 }
 
 TEST(LifeFixture, LifeConstructorTest11) {
@@ -107,7 +107,7 @@ TEST(LifeFixture, LifeConstructorTest11) {
 	istringstream input("0-0\n");
     Life<Cell> life(1, 3, input);
     output << life;
-    ASSERT_EQ(input.str(), output.str());
+    ASSERT_EQ("Population = 2.\n"+input.str(), output.str());
 }
 
 TEST(LifeFixture, LifeMakeMoveTest1) {
@@ -117,7 +117,7 @@ TEST(LifeFixture, LifeMakeMoveTest1) {
     life.makeMove();
     output << life;
     string expected = ".....\n.....\n.....\n";
-    ASSERT_EQ(expected, output.str());
+    ASSERT_EQ("Population = 0.\n"+expected, output.str());
 }
 
 TEST(LifeFixture, LifeMakeMoveTest2) {
@@ -127,7 +127,7 @@ TEST(LifeFixture, LifeMakeMoveTest2) {
     life.makeMove();
     output << life;
     string expected = "-000-\n-0-0-\n-000-\n";
-    ASSERT_EQ(expected, output.str());
+    ASSERT_EQ("Population = 8.\n"+expected, output.str());
 }
 
 TEST(LifeFixture, LifeMakeMoveTest3) {
@@ -138,7 +138,7 @@ TEST(LifeFixture, LifeMakeMoveTest3) {
 	    life.makeMove();
     output << life;
     string expected = "30--3\n-2132\n30--3\n";
-    ASSERT_EQ(expected, output.str());
+    ASSERT_EQ("Population = 10.\n"+expected, output.str());
 }
 
 TEST(LifeFixture, LifeMakeMoveTest4) {
@@ -148,7 +148,7 @@ TEST(LifeFixture, LifeMakeMoveTest4) {
     life.makeMove();
     output << life;
     string expected = ".....\n..***\n..***\n";
-    ASSERT_EQ(expected, output.str());
+    ASSERT_EQ("Population = 6.\n"+expected, output.str());
 }
 
 TEST(LifeFixture, LifeMakeMoveTest5) {
@@ -158,7 +158,7 @@ TEST(LifeFixture, LifeMakeMoveTest5) {
     life.makeMove();
     output << life;
     string expected = "...**\n...**\n.....\n";
-    ASSERT_EQ(expected, output.str());
+    ASSERT_EQ("Population = 4.\n"+expected, output.str());
 }
 
 TEST(LifeFixture, LifeMakeMoveTest6) {
@@ -169,7 +169,7 @@ TEST(LifeFixture, LifeMakeMoveTest6) {
 	    life.makeMove();
     output << life;
     string expected = ".....\n.....\n.....\n";
-    ASSERT_EQ(expected, output.str());
+    ASSERT_EQ("Population = 0.\n"+expected, output.str());
 }
 
 TEST(LifeFixture, LifeMakeMoveTest7) {
@@ -180,18 +180,18 @@ TEST(LifeFixture, LifeMakeMoveTest7) {
 	    life.makeMove();
     output << life;
     string expected = "...**\n...**\n.....\n";
-    ASSERT_EQ(expected, output.str());
+    ASSERT_EQ("Population = 4.\n"+expected, output.str());
 }
 
-// TEST(LifeFixture, LifeMakeMoveTest8) {
-//     ostringstream output;
-// 	istringstream input("--------\n---00---\n--0000--\n--------\n--------\n--------\n");
-//     Life<Cell> life(6, 8, input);
-// 	life.makeMove();
-//     output << life;
-//     string expected = "--------\n---00---\n--------\n-011110-\n--0000--\n--------\n";
-//     ASSERT_EQ(expected, output.str());
-// }
+TEST(LifeFixture, LifeMakeMoveTest8) {
+    ostringstream output;
+	istringstream input("--------\n---00---\n--0000--\n--------\n--------\n--------\n");
+    Life<Cell> life(6, 8, input);
+	life.makeMove();
+    output << life;
+    string expected = "Population = 12.\n---00---\n--------\n-011110-\n--0000--\n--------\n--------\n";
+    ASSERT_EQ(expected, output.str());
+}
 
 TEST(ConwayCellFixture, ConwayCellConstructor1) {
 	ConwayCell cell('.');
@@ -360,7 +360,7 @@ TEST(FredkinCellFixture, FredkinCellMakeMove8) {
 		cell.nextState(neighbors);
 	ostringstream output;
 	output << cell;
-	ASSERT_EQ("+", output.str());
+	ASSERT_EQ(".", output.str());
 }
 
 TEST(FredkinCellFixture, FredkinCellMakeMove9) {

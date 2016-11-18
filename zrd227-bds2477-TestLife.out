@@ -1,188 +1,167 @@
-==1697== Memcheck, a memory error detector
-==1697== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
-==1697== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
-==1697== Command: ./TestLife
-==1697== 
 Running main() from gtest_main.cc
-[==========] Running 60 tests from 4 test cases.
+[==========] Running 61 tests from 4 test cases.
 [----------] Global test environment set-up.
-[----------] 18 tests from LifeFixture
+[----------] 19 tests from LifeFixture
 [ RUN      ] LifeFixture.LifeConstructorTest1
-Population = 9.
-[       OK ] LifeFixture.LifeConstructorTest1 (43 ms)
+[       OK ] LifeFixture.LifeConstructorTest1 (0 ms)
 [ RUN      ] LifeFixture.LifeConstructorTest2
-Population = 6.
-[       OK ] LifeFixture.LifeConstructorTest2 (29 ms)
+[       OK ] LifeFixture.LifeConstructorTest2 (0 ms)
 [ RUN      ] LifeFixture.LifeConstructorTest3
-Population = 0.
-[       OK ] LifeFixture.LifeConstructorTest3 (3 ms)
+[       OK ] LifeFixture.LifeConstructorTest3 (0 ms)
 [ RUN      ] LifeFixture.LifeConstructorTest4
-Population = 0.
-[       OK ] LifeFixture.LifeConstructorTest4 (4 ms)
+[       OK ] LifeFixture.LifeConstructorTest4 (0 ms)
 [ RUN      ] LifeFixture.LifeConstructorTest5
-Population = 0.
-[       OK ] LifeFixture.LifeConstructorTest5 (28 ms)
+[       OK ] LifeFixture.LifeConstructorTest5 (0 ms)
 [ RUN      ] LifeFixture.LifeConstructorTest6
-Population = 1.
-[       OK ] LifeFixture.LifeConstructorTest6 (4 ms)
+[       OK ] LifeFixture.LifeConstructorTest6 (0 ms)
 [ RUN      ] LifeFixture.LifeConstructorTest7
-Population = 1.
-[       OK ] LifeFixture.LifeConstructorTest7 (3 ms)
+[       OK ] LifeFixture.LifeConstructorTest7 (0 ms)
 [ RUN      ] LifeFixture.LifeConstructorTest8
-Population = 1.
-[       OK ] LifeFixture.LifeConstructorTest8 (3 ms)
+[       OK ] LifeFixture.LifeConstructorTest8 (0 ms)
 [ RUN      ] LifeFixture.LifeConstructorTest9
-Population = 0.
-[       OK ] LifeFixture.LifeConstructorTest9 (4 ms)
+[       OK ] LifeFixture.LifeConstructorTest9 (0 ms)
 [ RUN      ] LifeFixture.LifeConstructorTest10
-Population = 2.
-[       OK ] LifeFixture.LifeConstructorTest10 (3 ms)
+[       OK ] LifeFixture.LifeConstructorTest10 (0 ms)
 [ RUN      ] LifeFixture.LifeConstructorTest11
-Population = 2.
-[       OK ] LifeFixture.LifeConstructorTest11 (3 ms)
+[       OK ] LifeFixture.LifeConstructorTest11 (0 ms)
 [ RUN      ] LifeFixture.LifeMakeMoveTest1
-Population = 0.
-[       OK ] LifeFixture.LifeMakeMoveTest1 (27 ms)
+[       OK ] LifeFixture.LifeMakeMoveTest1 (0 ms)
 [ RUN      ] LifeFixture.LifeMakeMoveTest2
-Population = 8.
-[       OK ] LifeFixture.LifeMakeMoveTest2 (28 ms)
+[       OK ] LifeFixture.LifeMakeMoveTest2 (0 ms)
 [ RUN      ] LifeFixture.LifeMakeMoveTest3
-Population = 10.
-[       OK ] LifeFixture.LifeMakeMoveTest3 (5 ms)
+[       OK ] LifeFixture.LifeMakeMoveTest3 (0 ms)
 [ RUN      ] LifeFixture.LifeMakeMoveTest4
-Population = 6.
-[       OK ] LifeFixture.LifeMakeMoveTest4 (4 ms)
+[       OK ] LifeFixture.LifeMakeMoveTest4 (0 ms)
 [ RUN      ] LifeFixture.LifeMakeMoveTest5
-Population = 4.
-[       OK ] LifeFixture.LifeMakeMoveTest5 (4 ms)
+[       OK ] LifeFixture.LifeMakeMoveTest5 (0 ms)
 [ RUN      ] LifeFixture.LifeMakeMoveTest6
-Population = 0.
-[       OK ] LifeFixture.LifeMakeMoveTest6 (5 ms)
+[       OK ] LifeFixture.LifeMakeMoveTest6 (0 ms)
 [ RUN      ] LifeFixture.LifeMakeMoveTest7
-Population = 4.
-[       OK ] LifeFixture.LifeMakeMoveTest7 (6 ms)
-[----------] 18 tests from LifeFixture (213 ms total)
+[       OK ] LifeFixture.LifeMakeMoveTest7 (0 ms)
+[ RUN      ] LifeFixture.LifeMakeMoveTest8
+[       OK ] LifeFixture.LifeMakeMoveTest8 (0 ms)
+[----------] 19 tests from LifeFixture (1 ms total)
 
 [----------] 7 tests from ConwayCellFixture
 [ RUN      ] ConwayCellFixture.ConwayCellConstructor1
-[       OK ] ConwayCellFixture.ConwayCellConstructor1 (3 ms)
+[       OK ] ConwayCellFixture.ConwayCellConstructor1 (0 ms)
 [ RUN      ] ConwayCellFixture.ConwayCellConstructor2
-[       OK ] ConwayCellFixture.ConwayCellConstructor2 (3 ms)
+[       OK ] ConwayCellFixture.ConwayCellConstructor2 (0 ms)
 [ RUN      ] ConwayCellFixture.ConwayCellMakeMove1
-[       OK ] ConwayCellFixture.ConwayCellMakeMove1 (4 ms)
+[       OK ] ConwayCellFixture.ConwayCellMakeMove1 (0 ms)
 [ RUN      ] ConwayCellFixture.ConwayCellMakeMove2
-[       OK ] ConwayCellFixture.ConwayCellMakeMove2 (4 ms)
+[       OK ] ConwayCellFixture.ConwayCellMakeMove2 (0 ms)
 [ RUN      ] ConwayCellFixture.ConwayCellMakeMove3
-[       OK ] ConwayCellFixture.ConwayCellMakeMove3 (4 ms)
+[       OK ] ConwayCellFixture.ConwayCellMakeMove3 (0 ms)
 [ RUN      ] ConwayCellFixture.ConwayCellMakeMove4
-[       OK ] ConwayCellFixture.ConwayCellMakeMove4 (4 ms)
+[       OK ] ConwayCellFixture.ConwayCellMakeMove4 (0 ms)
 [ RUN      ] ConwayCellFixture.ConwayCellMakeMove5
-[       OK ] ConwayCellFixture.ConwayCellMakeMove5 (4 ms)
-[----------] 7 tests from ConwayCellFixture (26 ms total)
+[       OK ] ConwayCellFixture.ConwayCellMakeMove5 (0 ms)
+[----------] 7 tests from ConwayCellFixture (0 ms total)
 
 [----------] 15 tests from FredkinCellFixture
 [ RUN      ] FredkinCellFixture.ConwayCellCopyAssignment1
-[       OK ] FredkinCellFixture.ConwayCellCopyAssignment1 (3 ms)
+[       OK ] FredkinCellFixture.ConwayCellCopyAssignment1 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellConstructor1
-[       OK ] FredkinCellFixture.FredkinCellConstructor1 (2 ms)
+[       OK ] FredkinCellFixture.FredkinCellConstructor1 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellConstructor2
-[       OK ] FredkinCellFixture.FredkinCellConstructor2 (3 ms)
+[       OK ] FredkinCellFixture.FredkinCellConstructor2 (1 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellMakeMove1
-[       OK ] FredkinCellFixture.FredkinCellMakeMove1 (4 ms)
+[       OK ] FredkinCellFixture.FredkinCellMakeMove1 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellMakeMove2
-[       OK ] FredkinCellFixture.FredkinCellMakeMove2 (4 ms)
+[       OK ] FredkinCellFixture.FredkinCellMakeMove2 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellMakeMove3
-[       OK ] FredkinCellFixture.FredkinCellMakeMove3 (4 ms)
+[       OK ] FredkinCellFixture.FredkinCellMakeMove3 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellMakeMove4
-[       OK ] FredkinCellFixture.FredkinCellMakeMove4 (4 ms)
+[       OK ] FredkinCellFixture.FredkinCellMakeMove4 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellMakeMove5
-[       OK ] FredkinCellFixture.FredkinCellMakeMove5 (4 ms)
+[       OK ] FredkinCellFixture.FredkinCellMakeMove5 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellMakeMove6
-[       OK ] FredkinCellFixture.FredkinCellMakeMove6 (4 ms)
+[       OK ] FredkinCellFixture.FredkinCellMakeMove6 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellMakeMove7
-[       OK ] FredkinCellFixture.FredkinCellMakeMove7 (4 ms)
+[       OK ] FredkinCellFixture.FredkinCellMakeMove7 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellMakeMove8
-[       OK ] FredkinCellFixture.FredkinCellMakeMove8 (5 ms)
+[       OK ] FredkinCellFixture.FredkinCellMakeMove8 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellMakeMove9
-[       OK ] FredkinCellFixture.FredkinCellMakeMove9 (3 ms)
+[       OK ] FredkinCellFixture.FredkinCellMakeMove9 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellCopyAssignment1
-[       OK ] FredkinCellFixture.FredkinCellCopyAssignment1 (4 ms)
+[       OK ] FredkinCellFixture.FredkinCellCopyAssignment1 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellCopyAssignment2
-[       OK ] FredkinCellFixture.FredkinCellCopyAssignment2 (3 ms)
+[       OK ] FredkinCellFixture.FredkinCellCopyAssignment2 (0 ms)
 [ RUN      ] FredkinCellFixture.FredkinCellCopyAssignment3
-[       OK ] FredkinCellFixture.FredkinCellCopyAssignment3 (3 ms)
-[----------] 15 tests from FredkinCellFixture (54 ms total)
+[       OK ] FredkinCellFixture.FredkinCellCopyAssignment3 (0 ms)
+[----------] 15 tests from FredkinCellFixture (1 ms total)
 
 [----------] 20 tests from AbstractCellFixture
 [ RUN      ] AbstractCellFixture.AbstractCellCheckState1
-[       OK ] AbstractCellFixture.AbstractCellCheckState1 (3 ms)
+[       OK ] AbstractCellFixture.AbstractCellCheckState1 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCheckState2
-[       OK ] AbstractCellFixture.AbstractCellCheckState2 (2 ms)
+[       OK ] AbstractCellFixture.AbstractCellCheckState2 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCheckState3
-[       OK ] AbstractCellFixture.AbstractCellCheckState3 (2 ms)
+[       OK ] AbstractCellFixture.AbstractCellCheckState3 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCheckState4
-[       OK ] AbstractCellFixture.AbstractCellCheckState4 (2 ms)
+[       OK ] AbstractCellFixture.AbstractCellCheckState4 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCheckState5
-[       OK ] AbstractCellFixture.AbstractCellCheckState5 (2 ms)
+[       OK ] AbstractCellFixture.AbstractCellCheckState5 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCheckState6
-[       OK ] AbstractCellFixture.AbstractCellCheckState6 (2 ms)
+[       OK ] AbstractCellFixture.AbstractCellCheckState6 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCheckState7
-[       OK ] AbstractCellFixture.AbstractCellCheckState7 (3 ms)
+[       OK ] AbstractCellFixture.AbstractCellCheckState7 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCheckState8
-[       OK ] AbstractCellFixture.AbstractCellCheckState8 (2 ms)
+[       OK ] AbstractCellFixture.AbstractCellCheckState8 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCheckState9
-[       OK ] AbstractCellFixture.AbstractCellCheckState9 (2 ms)
+[       OK ] AbstractCellFixture.AbstractCellCheckState9 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCheckState10
-[       OK ] AbstractCellFixture.AbstractCellCheckState10 (3 ms)
+[       OK ] AbstractCellFixture.AbstractCellCheckState10 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCopyAssignment1
-[       OK ] AbstractCellFixture.AbstractCellCopyAssignment1 (2 ms)
+[       OK ] AbstractCellFixture.AbstractCellCopyAssignment1 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCopyAssignment2
-[       OK ] AbstractCellFixture.AbstractCellCopyAssignment2 (3 ms)
+[       OK ] AbstractCellFixture.AbstractCellCopyAssignment2 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCopyAssignment3
-[       OK ] AbstractCellFixture.AbstractCellCopyAssignment3 (2 ms)
+[       OK ] AbstractCellFixture.AbstractCellCopyAssignment3 (0 ms)
 [ RUN      ] AbstractCellFixture.AbstractCellCopyAssignment4
-[       OK ] AbstractCellFixture.AbstractCellCopyAssignment4 (2 ms)
+[       OK ] AbstractCellFixture.AbstractCellCopyAssignment4 (0 ms)
 [ RUN      ] AbstractCellFixture.CellCopyAssignment1
-[       OK ] AbstractCellFixture.CellCopyAssignment1 (3 ms)
+[       OK ] AbstractCellFixture.CellCopyAssignment1 (0 ms)
 [ RUN      ] AbstractCellFixture.CellCopyAssignment2
-[       OK ] AbstractCellFixture.CellCopyAssignment2 (3 ms)
+[       OK ] AbstractCellFixture.CellCopyAssignment2 (0 ms)
 [ RUN      ] AbstractCellFixture.CellCopyAssignment3
-[       OK ] AbstractCellFixture.CellCopyAssignment3 (3 ms)
+[       OK ] AbstractCellFixture.CellCopyAssignment3 (0 ms)
 [ RUN      ] AbstractCellFixture.CellCopyAssignment4
-[       OK ] AbstractCellFixture.CellCopyAssignment4 (3 ms)
+[       OK ] AbstractCellFixture.CellCopyAssignment4 (0 ms)
 [ RUN      ] AbstractCellFixture.CellCopyAssignment5
-[       OK ] AbstractCellFixture.CellCopyAssignment5 (2 ms)
+[       OK ] AbstractCellFixture.CellCopyAssignment5 (0 ms)
 [ RUN      ] AbstractCellFixture.CellCopyAssignment6
-[       OK ] AbstractCellFixture.CellCopyAssignment6 (3 ms)
-[----------] 20 tests from AbstractCellFixture (52 ms total)
+[       OK ] AbstractCellFixture.CellCopyAssignment6 (0 ms)
+[----------] 20 tests from AbstractCellFixture (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 60 tests from 4 test cases ran. (374 ms total)
-[  PASSED  ] 60 tests.
-==1697== 
-==1697== HEAP SUMMARY:
-==1697==     in use at exit: 1,312 bytes in 82 blocks
-==1697==   total heap usage: 1,589 allocs, 1,507 frees, 188,745 bytes allocated
-==1697== 
-==1697== LEAK SUMMARY:
-==1697==    definitely lost: 1,312 bytes in 82 blocks
-==1697==    indirectly lost: 0 bytes in 0 blocks
-==1697==      possibly lost: 0 bytes in 0 blocks
-==1697==    still reachable: 0 bytes in 0 blocks
-==1697==         suppressed: 0 bytes in 0 blocks
-==1697== Rerun with --leak-check=full to see details of leaked memory
-==1697== 
-==1697== For counts of detected and suppressed errors, rerun with: -v
-==1697== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[==========] 61 tests from 4 test cases ran. (414 ms total)
+[  PASSED  ] 61 tests.
+==10481== 
+==10481== HEAP SUMMARY:
+==10481==     in use at exit: 2,848 bytes in 178 blocks
+==10481==   total heap usage: 1,787 allocs, 1,609 frees, 195,913 bytes allocated
+==10481== 
+==10481== LEAK SUMMARY:
+==10481==    definitely lost: 2,848 bytes in 178 blocks
+==10481==    indirectly lost: 0 bytes in 0 blocks
+==10481==      possibly lost: 0 bytes in 0 blocks
+==10481==    still reachable: 0 bytes in 0 blocks
+==10481==         suppressed: 0 bytes in 0 blocks
+==10481== Rerun with --leak-check=full to see details of leaked memory
+==10481== 
+==10481== For counts of detected and suppressed errors, rerun with: -v
+==10481== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 File 'Life.h'
-Lines executed:97.99% of 149
-Branches executed:100.00% of 184
-Taken at least once:89.13% of 184
-Calls executed:86.24% of 189
+Lines executed:100.00% of 158
+Branches executed:100.00% of 232
+Taken at least once:88.79% of 232
+Calls executed:88.44% of 225
 Creating 'Life.h.gcov'
 File 'TestLife.c++'
-Lines executed:100.00% of 377
-Branches executed:74.19% of 1860
-Taken at least once:37.47% of 1860
-Calls executed:60.68% of 2271
+Lines executed:100.00% of 385
+Branches executed:74.79% of 1936
+Taken at least once:37.76% of 1936
+Calls executed:60.83% of 2372
 Creating 'TestLife.c++.gcov'
