@@ -1,0 +1,95 @@
+==19559== Memcheck, a memory error detector
+==19559== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==19559== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==19559== Command: ./TestLife
+==19559== 
+Running main() from gtest_main.cc
+[==========] Running 30 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 30 tests from LifeFixture
+[ RUN      ] LifeFixture.test
+[       OK ] LifeFixture.test (8 ms)
+[ RUN      ] LifeFixture.test2
+[       OK ] LifeFixture.test2 (2 ms)
+[ RUN      ] LifeFixture.test3
+[       OK ] LifeFixture.test3 (2 ms)
+[ RUN      ] LifeFixture.test4
+[       OK ] LifeFixture.test4 (2 ms)
+[ RUN      ] LifeFixture.test5
+[       OK ] LifeFixture.test5 (1 ms)
+[ RUN      ] LifeFixture.test6
+[       OK ] LifeFixture.test6 (1 ms)
+[ RUN      ] LifeFixture.test7
+[       OK ] LifeFixture.test7 (2 ms)
+[ RUN      ] LifeFixture.test8
+[       OK ] LifeFixture.test8 (2 ms)
+[ RUN      ] LifeFixture.test9
+[       OK ] LifeFixture.test9 (1 ms)
+[ RUN      ] LifeFixture.test10
+[       OK ] LifeFixture.test10 (1 ms)
+[ RUN      ] LifeFixture.test11
+[       OK ] LifeFixture.test11 (2 ms)
+[ RUN      ] LifeFixture.test12
+[       OK ] LifeFixture.test12 (2 ms)
+[ RUN      ] LifeFixture.test13
+[       OK ] LifeFixture.test13 (2 ms)
+[ RUN      ] LifeFixture.test14
+[       OK ] LifeFixture.test14 (2 ms)
+[ RUN      ] LifeFixture.test15
+[       OK ] LifeFixture.test15 (2 ms)
+[ RUN      ] LifeFixture.test16
+[       OK ] LifeFixture.test16 (2 ms)
+[ RUN      ] LifeFixture.test17
+[       OK ] LifeFixture.test17 (2 ms)
+[ RUN      ] LifeFixture.test18
+[       OK ] LifeFixture.test18 (2 ms)
+[ RUN      ] LifeFixture.test19
+[       OK ] LifeFixture.test19 (2 ms)
+[ RUN      ] LifeFixture.test20
+[       OK ] LifeFixture.test20 (2 ms)
+[ RUN      ] LifeFixture.test21
+[       OK ] LifeFixture.test21 (2 ms)
+[ RUN      ] LifeFixture.test22
+[       OK ] LifeFixture.test22 (2 ms)
+[ RUN      ] LifeFixture.test23
+[       OK ] LifeFixture.test23 (2 ms)
+[ RUN      ] LifeFixture.test24
+[       OK ] LifeFixture.test24 (2 ms)
+[ RUN      ] LifeFixture.test25
+[       OK ] LifeFixture.test25 (2 ms)
+[ RUN      ] LifeFixture.test26
+[       OK ] LifeFixture.test26 (2 ms)
+[ RUN      ] LifeFixture.test27
+[       OK ] LifeFixture.test27 (2 ms)
+[ RUN      ] LifeFixture.test28
+[       OK ] LifeFixture.test28 (2 ms)
+[ RUN      ] LifeFixture.test29
+[       OK ] LifeFixture.test29 (2 ms)
+[ RUN      ] LifeFixture.test30
+[       OK ] LifeFixture.test30 (2 ms)
+[----------] 30 tests from LifeFixture (70 ms total)
+
+[----------] Global test environment tear-down
+[==========] 30 tests from 1 test case ran. (99 ms total)
+[  PASSED  ] 30 tests.
+==19559== 
+==19559== HEAP SUMMARY:
+==19559==     in use at exit: 0 bytes in 0 blocks
+==19559==   total heap usage: 662 allocs, 662 frees, 89,348 bytes allocated
+==19559== 
+==19559== All heap blocks were freed -- no leaks are possible
+==19559== 
+==19559== For counts of detected and suppressed errors, rerun with: -v
+==19559== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:72.92% of 48
+Branches executed:63.16% of 38
+Taken at least once:47.37% of 38
+Calls executed:33.33% of 24
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 57
+Branches executed:51.81% of 498
+Taken at least once:25.90% of 498
+Calls executed:50.00% of 780
+Creating 'TestLife.c++.gcov'

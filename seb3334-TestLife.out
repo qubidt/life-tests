@@ -1,0 +1,180 @@
+==3360== Memcheck, a memory error detector
+==3360== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3360== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3360== Command: ./TestLife
+==3360== 
+Running main() from gtest_main.cc
+[==========] Running 48 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 11 tests from ConwayFixture
+[ RUN      ] ConwayFixture.tInit1
+[       OK ] ConwayFixture.tInit1 (7 ms)
+[ RUN      ] ConwayFixture.tInit2
+[       OK ] ConwayFixture.tInit2 (2 ms)
+[ RUN      ] ConwayFixture.tInit3
+[       OK ] ConwayFixture.tInit3 (3 ms)
+[ RUN      ] ConwayFixture.tInit4
+[       OK ] ConwayFixture.tInit4 (2 ms)
+[ RUN      ] ConwayFixture.tInit5
+[       OK ] ConwayFixture.tInit5 (2 ms)
+[ RUN      ] ConwayFixture.tUpdates1
+[       OK ] ConwayFixture.tUpdates1 (2 ms)
+[ RUN      ] ConwayFixture.tUpdates2
+[       OK ] ConwayFixture.tUpdates2 (3 ms)
+[ RUN      ] ConwayFixture.tUpdates3
+[       OK ] ConwayFixture.tUpdates3 (2 ms)
+[ RUN      ] ConwayFixture.tUpdates4
+[       OK ] ConwayFixture.tUpdates4 (2 ms)
+[ RUN      ] ConwayFixture.tUpdates5
+[       OK ] ConwayFixture.tUpdates5 (2 ms)
+[ RUN      ] ConwayFixture.tUpdates6
+[       OK ] ConwayFixture.tUpdates6 (2 ms)
+[----------] 11 tests from ConwayFixture (37 ms total)
+
+[----------] 16 tests from FredkinFixture
+[ RUN      ] FredkinFixture.tInit1
+[       OK ] FredkinFixture.tInit1 (2 ms)
+[ RUN      ] FredkinFixture.tInit2
+[       OK ] FredkinFixture.tInit2 (2 ms)
+[ RUN      ] FredkinFixture.tInit3
+[       OK ] FredkinFixture.tInit3 (3 ms)
+[ RUN      ] FredkinFixture.tInit4
+[       OK ] FredkinFixture.tInit4 (2 ms)
+[ RUN      ] FredkinFixture.tInit5
+[       OK ] FredkinFixture.tInit5 (2 ms)
+[ RUN      ] FredkinFixture.tUpdates1
+[       OK ] FredkinFixture.tUpdates1 (2 ms)
+[ RUN      ] FredkinFixture.tUpdates2
+[       OK ] FredkinFixture.tUpdates2 (2 ms)
+[ RUN      ] FredkinFixture.tUpdates3
+[       OK ] FredkinFixture.tUpdates3 (2 ms)
+[ RUN      ] FredkinFixture.tUpdates4
+[       OK ] FredkinFixture.tUpdates4 (2 ms)
+[ RUN      ] FredkinFixture.tUpdates5
+[       OK ] FredkinFixture.tUpdates5 (2 ms)
+[ RUN      ] FredkinFixture.tUpdates6
+[       OK ] FredkinFixture.tUpdates6 (2 ms)
+[ RUN      ] FredkinFixture.tUpdates7
+[       OK ] FredkinFixture.tUpdates7 (7 ms)
+[ RUN      ] FredkinFixture.tUpdates8
+[       OK ] FredkinFixture.tUpdates8 (3 ms)
+[ RUN      ] FredkinFixture.tUpdates9
+[       OK ] FredkinFixture.tUpdates9 (3 ms)
+[ RUN      ] FredkinFixture.tUpdates10
+[       OK ] FredkinFixture.tUpdates10 (3 ms)
+[ RUN      ] FredkinFixture.tUpdates11
+[       OK ] FredkinFixture.tUpdates11 (3 ms)
+[----------] 16 tests from FredkinFixture (45 ms total)
+
+[----------] 10 tests from CellFixture
+[ RUN      ] CellFixture.tInit1
+[       OK ] CellFixture.tInit1 (2 ms)
+[ RUN      ] CellFixture.tInit2
+[       OK ] CellFixture.tInit2 (3 ms)
+[ RUN      ] CellFixture.tInit3
+[       OK ] CellFixture.tInit3 (2 ms)
+[ RUN      ] CellFixture.tInit4
+[       OK ] CellFixture.tInit4 (2 ms)
+[ RUN      ] CellFixture.tInit5
+[       OK ] CellFixture.tInit5 (2 ms)
+[ RUN      ] CellFixture.tUpdates1
+[       OK ] CellFixture.tUpdates1 (4 ms)
+[ RUN      ] CellFixture.tMutate1
+[       OK ] CellFixture.tMutate1 (4 ms)
+[ RUN      ] CellFixture.tMutate2
+[       OK ] CellFixture.tMutate2 (3 ms)
+[ RUN      ] CellFixture.tMutate3
+[       OK ] CellFixture.tMutate3 (4 ms)
+[ RUN      ] CellFixture.tMutate4
+[       OK ] CellFixture.tMutate4 (4 ms)
+[----------] 10 tests from CellFixture (30 ms total)
+
+[----------] 11 tests from LifeFixture
+[ RUN      ] LifeFixture.Life_Test_1
+[       OK ] LifeFixture.Life_Test_1 (27 ms)
+[ RUN      ] LifeFixture.Life_Test_2
+
+Generation = 0, Population = 8.
+.....
+.***.
+.*.*.
+.***.
+.....
+
+[       OK ] LifeFixture.Life_Test_2 (14 ms)
+[ RUN      ] LifeFixture.Life_Test_3
+[       OK ] LifeFixture.Life_Test_3 (20 ms)
+[ RUN      ] LifeFixture.Life_Test_4
+
+Generation = 0, Population = 1.
+---
+-1-
+---
+
+[       OK ] LifeFixture.Life_Test_4 (11 ms)
+[ RUN      ] LifeFixture.Life_Test_5
+[       OK ] LifeFixture.Life_Test_5 (37 ms)
+[ RUN      ] LifeFixture.Life_Test_6
+[       OK ] LifeFixture.Life_Test_6 (3 ms)
+[ RUN      ] LifeFixture.Life_Test_7
+[       OK ] LifeFixture.Life_Test_7 (18 ms)
+[ RUN      ] LifeFixture.Life_Test_8
+
+Generation = 0, Population = 2.
+...
+*1.
+...
+
+[       OK ] LifeFixture.Life_Test_8 (11 ms)
+[ RUN      ] LifeFixture.Life_Test_9
+[       OK ] LifeFixture.Life_Test_9 (5 ms)
+[ RUN      ] LifeFixture.Life_Test_10
+
+Generation = 0, Population = 1.
+...
+.1.
+...
+
+[       OK ] LifeFixture.Life_Test_10 (4 ms)
+[ RUN      ] LifeFixture.Life_Test_11
+
+Generation = 0, Population = 13.
+***..
+*...*
+.***.
+..***
+.*.*.
+
+[       OK ] LifeFixture.Life_Test_11 (6 ms)
+[----------] 11 tests from LifeFixture (157 ms total)
+
+[----------] Global test environment tear-down
+[==========] 48 tests from 4 test cases ran. (299 ms total)
+[  PASSED  ] 48 tests.
+==3360== 
+==3360== HEAP SUMMARY:
+==3360==     in use at exit: 120 bytes in 6 blocks
+==3360==   total heap usage: 1,243 allocs, 1,237 frees, 144,824 bytes allocated
+==3360== 
+==3360== LEAK SUMMARY:
+==3360==    definitely lost: 120 bytes in 6 blocks
+==3360==    indirectly lost: 0 bytes in 0 blocks
+==3360==      possibly lost: 0 bytes in 0 blocks
+==3360==    still reachable: 0 bytes in 0 blocks
+==3360==         suppressed: 0 bytes in 0 blocks
+==3360== Rerun with --leak-check=full to see details of leaked memory
+==3360== 
+==3360== For counts of detected and suppressed errors, rerun with: -v
+==3360== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:100.00% of 131
+Branches executed:99.26% of 272
+Taken at least once:84.19% of 272
+Calls executed:92.02% of 163
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:98.74% of 317
+Branches executed:64.17% of 1546
+Taken at least once:32.08% of 1546
+Calls executed:53.83% of 1774
+Creating 'TestLife.c++.gcov'

@@ -1,0 +1,130 @@
+Running main() from gtest_main.cc
+[==========] Running 59 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 42 tests from LifeFixture
+[ RUN      ] LifeFixture.advance_test1
+[       OK ] LifeFixture.advance_test1 (0 ms)
+[ RUN      ] LifeFixture.advance_test2
+[       OK ] LifeFixture.advance_test2 (0 ms)
+[ RUN      ] LifeFixture.advance_test3
+[       OK ] LifeFixture.advance_test3 (0 ms)
+[ RUN      ] LifeFixture.advance_test4
+[       OK ] LifeFixture.advance_test4 (0 ms)
+[ RUN      ] LifeFixture.advance_test5
+[       OK ] LifeFixture.advance_test5 (0 ms)
+[ RUN      ] LifeFixture.life_print_test1
+[       OK ] LifeFixture.life_print_test1 (0 ms)
+[ RUN      ] LifeFixture.ab_print_test1
+[       OK ] LifeFixture.ab_print_test1 (0 ms)
+[ RUN      ] LifeFixture.ab_print_test2
+[       OK ] LifeFixture.ab_print_test2 (0 ms)
+[ RUN      ] LifeFixture.ab_print_test3
+[       OK ] LifeFixture.ab_print_test3 (0 ms)
+[ RUN      ] LifeFixture.update_hood_test1
+[       OK ] LifeFixture.update_hood_test1 (0 ms)
+[ RUN      ] LifeFixture.update_hood_test2
+[       OK ] LifeFixture.update_hood_test2 (0 ms)
+[ RUN      ] LifeFixture.update_hood_test3
+[       OK ] LifeFixture.update_hood_test3 (0 ms)
+[ RUN      ] LifeFixture.conway_evolve_test1
+[       OK ] LifeFixture.conway_evolve_test1 (0 ms)
+[ RUN      ] LifeFixture.conway_evolve_test2
+[       OK ] LifeFixture.conway_evolve_test2 (0 ms)
+[ RUN      ] LifeFixture.conway_evolve_test3
+[       OK ] LifeFixture.conway_evolve_test3 (0 ms)
+[ RUN      ] LifeFixture.conway_staterep_test1
+[       OK ] LifeFixture.conway_staterep_test1 (0 ms)
+[ RUN      ] LifeFixture.conway_staterep_test2
+[       OK ] LifeFixture.conway_staterep_test2 (0 ms)
+[ RUN      ] LifeFixture.conway_staterep_test3
+[       OK ] LifeFixture.conway_staterep_test3 (0 ms)
+[ RUN      ] LifeFixture.conway_count_hood_test1
+[       OK ] LifeFixture.conway_count_hood_test1 (0 ms)
+[ RUN      ] LifeFixture.conway_count_hood_test2
+[       OK ] LifeFixture.conway_count_hood_test2 (0 ms)
+[ RUN      ] LifeFixture.conway_count_hood_test3
+[       OK ] LifeFixture.conway_count_hood_test3 (0 ms)
+[ RUN      ] LifeFixture.conway_update_status_test1
+[       OK ] LifeFixture.conway_update_status_test1 (0 ms)
+[ RUN      ] LifeFixture.conway_update_status_test2
+[       OK ] LifeFixture.conway_update_status_test2 (0 ms)
+[ RUN      ] LifeFixture.conway_update_status_test3
+[       OK ] LifeFixture.conway_update_status_test3 (0 ms)
+[ RUN      ] LifeFixture.conway_update_status_test4
+[       OK ] LifeFixture.conway_update_status_test4 (0 ms)
+[ RUN      ] LifeFixture.conway_update_status_test5
+[       OK ] LifeFixture.conway_update_status_test5 (0 ms)
+[ RUN      ] LifeFixture.conway_clone_test1
+[       OK ] LifeFixture.conway_clone_test1 (0 ms)
+[ RUN      ] LifeFixture.fredkin_evolve_test1
+[       OK ] LifeFixture.fredkin_evolve_test1 (0 ms)
+[ RUN      ] LifeFixture.fredkin_evolve_test2
+[       OK ] LifeFixture.fredkin_evolve_test2 (0 ms)
+[ RUN      ] LifeFixture.fredkin_evolve_test3
+[       OK ] LifeFixture.fredkin_evolve_test3 (0 ms)
+[ RUN      ] LifeFixture.fredkin_staterep_test1
+[       OK ] LifeFixture.fredkin_staterep_test1 (0 ms)
+[ RUN      ] LifeFixture.fredkin_staterep_test2
+[       OK ] LifeFixture.fredkin_staterep_test2 (0 ms)
+[ RUN      ] LifeFixture.fredkin_staterep_test3
+[       OK ] LifeFixture.fredkin_staterep_test3 (0 ms)
+[ RUN      ] LifeFixture.fredkin_count_hood_test1
+[       OK ] LifeFixture.fredkin_count_hood_test1 (0 ms)
+[ RUN      ] LifeFixture.fredkin_count_hood_test2
+[       OK ] LifeFixture.fredkin_count_hood_test2 (0 ms)
+[ RUN      ] LifeFixture.fredkin_count_hood_test3
+[       OK ] LifeFixture.fredkin_count_hood_test3 (0 ms)
+[ RUN      ] LifeFixture.fredkin_update_status_test1
+[       OK ] LifeFixture.fredkin_update_status_test1 (0 ms)
+[ RUN      ] LifeFixture.fredkin_update_status_test2
+[       OK ] LifeFixture.fredkin_update_status_test2 (0 ms)
+[ RUN      ] LifeFixture.fredkin_update_status_test3
+[       OK ] LifeFixture.fredkin_update_status_test3 (0 ms)
+[ RUN      ] LifeFixture.fredkin_update_status_test4
+[       OK ] LifeFixture.fredkin_update_status_test4 (0 ms)
+[ RUN      ] LifeFixture.fredkin_update_status_test5
+[       OK ] LifeFixture.fredkin_update_status_test5 (0 ms)
+[ RUN      ] LifeFixture.fredkin_clone_test1
+[       OK ] LifeFixture.fredkin_clone_test1 (0 ms)
+[----------] 42 tests from LifeFixture (1 ms total)
+
+[----------] 17 tests from CellFixture
+[ RUN      ] CellFixture.specialDestructor
+[       OK ] CellFixture.specialDestructor (0 ms)
+[ RUN      ] CellFixture.specialDestructor2
+[       OK ] CellFixture.specialDestructor2 (0 ms)
+[ RUN      ] CellFixture.specialDestructor3
+[       OK ] CellFixture.specialDestructor3 (0 ms)
+[ RUN      ] CellFixture.specialDestructor4
+[       OK ] CellFixture.specialDestructor4 (0 ms)
+[ RUN      ] CellFixture.evolve
+[       OK ] CellFixture.evolve (0 ms)
+[ RUN      ] CellFixture.evolve2
+[       OK ] CellFixture.evolve2 (0 ms)
+[ RUN      ] CellFixture.evolve3
+[       OK ] CellFixture.evolve3 (0 ms)
+[ RUN      ] CellFixture.updateStatus
+[       OK ] CellFixture.updateStatus (0 ms)
+[ RUN      ] CellFixture.updateStatus2
+[       OK ] CellFixture.updateStatus2 (0 ms)
+[ RUN      ] CellFixture.updateStatus3
+[       OK ] CellFixture.updateStatus3 (0 ms)
+[ RUN      ] CellFixture.updateNeighborhoodCell
+[       OK ] CellFixture.updateNeighborhoodCell (0 ms)
+[ RUN      ] CellFixture.updateNeighborhoodCell2
+[       OK ] CellFixture.updateNeighborhoodCell2 (0 ms)
+[ RUN      ] CellFixture.updateNeighborhoodCell3
+[       OK ] CellFixture.updateNeighborhoodCell3 (0 ms)
+[ RUN      ] CellFixture.updateNeighborhoodCell4
+[       OK ] CellFixture.updateNeighborhoodCell4 (0 ms)
+[ RUN      ] CellFixture.aliveCell
+[       OK ] CellFixture.aliveCell (0 ms)
+[ RUN      ] CellFixture.aliveCell2
+[       OK ] CellFixture.aliveCell2 (0 ms)
+[ RUN      ] CellFixture.aliveCell3
+[       OK ] CellFixture.aliveCell3 (0 ms)
+[----------] 17 tests from CellFixture (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 59 tests from 2 test cases ran. (1 ms total)
+[  PASSED  ] 59 tests.

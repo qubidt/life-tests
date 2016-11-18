@@ -1,0 +1,330 @@
+==7261== Memcheck, a memory error detector
+==7261== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==7261== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==7261== Command: ./TestLife
+==7261== 
+Running main() from gtest_main.cc
+[==========] Running 143 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 26 tests from ConwayCellFixture
+[ RUN      ] ConwayCellFixture.defaultConstructor1
+[       OK ] ConwayCellFixture.defaultConstructor1 (6 ms)
+[ RUN      ] ConwayCellFixture.defaultConstructor2
+[       OK ] ConwayCellFixture.defaultConstructor2 (3 ms)
+[ RUN      ] ConwayCellFixture.objectConstructor1
+[       OK ] ConwayCellFixture.objectConstructor1 (2 ms)
+[ RUN      ] ConwayCellFixture.objectConstructor2
+[       OK ] ConwayCellFixture.objectConstructor2 (1 ms)
+[ RUN      ] ConwayCellFixture.objectConstructor3
+[       OK ] ConwayCellFixture.objectConstructor3 (1 ms)
+[ RUN      ] ConwayCellFixture.clone1
+[       OK ] ConwayCellFixture.clone1 (3 ms)
+[ RUN      ] ConwayCellFixture.clone2
+[       OK ] ConwayCellFixture.clone2 (2 ms)
+[ RUN      ] ConwayCellFixture.clone3
+[       OK ] ConwayCellFixture.clone3 (2 ms)
+[ RUN      ] ConwayCellFixture.modifyCell1
+[       OK ] ConwayCellFixture.modifyCell1 (2 ms)
+[ RUN      ] ConwayCellFixture.modifyCell2
+[       OK ] ConwayCellFixture.modifyCell2 (1 ms)
+[ RUN      ] ConwayCellFixture.modifyCell3
+[       OK ] ConwayCellFixture.modifyCell3 (5 ms)
+[ RUN      ] ConwayCellFixture.modifyCell4
+[       OK ] ConwayCellFixture.modifyCell4 (3 ms)
+[ RUN      ] ConwayCellFixture.modifyCell5
+[       OK ] ConwayCellFixture.modifyCell5 (4 ms)
+[ RUN      ] ConwayCellFixture.modifyCell6
+[       OK ] ConwayCellFixture.modifyCell6 (3 ms)
+[ RUN      ] ConwayCellFixture.modifyCell7
+[       OK ] ConwayCellFixture.modifyCell7 (5 ms)
+[ RUN      ] ConwayCellFixture.isConway1
+[       OK ] ConwayCellFixture.isConway1 (1 ms)
+[ RUN      ] ConwayCellFixture.isConway2
+[       OK ] ConwayCellFixture.isConway2 (2 ms)
+[ RUN      ] ConwayCellFixture.isConway3
+[       OK ] ConwayCellFixture.isConway3 (2 ms)
+[ RUN      ] ConwayCellFixture.stream1
+[       OK ] ConwayCellFixture.stream1 (3 ms)
+[ RUN      ] ConwayCellFixture.stream2
+[       OK ] ConwayCellFixture.stream2 (4 ms)
+[ RUN      ] ConwayCellFixture.stream3
+[       OK ] ConwayCellFixture.stream3 (3 ms)
+[ RUN      ] ConwayCellFixture.equals1
+[       OK ] ConwayCellFixture.equals1 (2 ms)
+[ RUN      ] ConwayCellFixture.equals2
+[       OK ] ConwayCellFixture.equals2 (2 ms)
+[ RUN      ] ConwayCellFixture.equals3
+[       OK ] ConwayCellFixture.equals3 (2 ms)
+[ RUN      ] ConwayCellFixture.equals4
+[       OK ] ConwayCellFixture.equals4 (2 ms)
+[ RUN      ] ConwayCellFixture.equals5
+[       OK ] ConwayCellFixture.equals5 (3 ms)
+[----------] 26 tests from ConwayCellFixture (75 ms total)
+
+[----------] 30 tests from FredkinCellFixture
+[ RUN      ] FredkinCellFixture.defaultConstructor1
+[       OK ] FredkinCellFixture.defaultConstructor1 (2 ms)
+[ RUN      ] FredkinCellFixture.defaultConstructor2
+[       OK ] FredkinCellFixture.defaultConstructor2 (2 ms)
+[ RUN      ] FredkinCellFixture.objectConstructor1
+[       OK ] FredkinCellFixture.objectConstructor1 (1 ms)
+[ RUN      ] FredkinCellFixture.objectConstructor2
+[       OK ] FredkinCellFixture.objectConstructor2 (2 ms)
+[ RUN      ] FredkinCellFixture.objectConstructor3
+[       OK ] FredkinCellFixture.objectConstructor3 (2 ms)
+[ RUN      ] FredkinCellFixture.objectConstructor4
+[       OK ] FredkinCellFixture.objectConstructor4 (2 ms)
+[ RUN      ] FredkinCellFixture.clone1
+[       OK ] FredkinCellFixture.clone1 (2 ms)
+[ RUN      ] FredkinCellFixture.clone2
+[       OK ] FredkinCellFixture.clone2 (2 ms)
+[ RUN      ] FredkinCellFixture.clone3
+[       OK ] FredkinCellFixture.clone3 (2 ms)
+[ RUN      ] FredkinCellFixture.clone4
+[       OK ] FredkinCellFixture.clone4 (2 ms)
+[ RUN      ] FredkinCellFixture.modifyCell1
+[       OK ] FredkinCellFixture.modifyCell1 (1 ms)
+[ RUN      ] FredkinCellFixture.modifyCell2
+[       OK ] FredkinCellFixture.modifyCell2 (2 ms)
+[ RUN      ] FredkinCellFixture.modifyCell3
+[       OK ] FredkinCellFixture.modifyCell3 (4 ms)
+[ RUN      ] FredkinCellFixture.modifyCell4
+[       OK ] FredkinCellFixture.modifyCell4 (4 ms)
+[ RUN      ] FredkinCellFixture.modifyCell5
+[       OK ] FredkinCellFixture.modifyCell5 (4 ms)
+[ RUN      ] FredkinCellFixture.modifyCell6
+[       OK ] FredkinCellFixture.modifyCell6 (4 ms)
+[ RUN      ] FredkinCellFixture.modifyCell7
+[       OK ] FredkinCellFixture.modifyCell7 (7 ms)
+[ RUN      ] FredkinCellFixture.isConway1
+[       OK ] FredkinCellFixture.isConway1 (1 ms)
+[ RUN      ] FredkinCellFixture.isConway2
+[       OK ] FredkinCellFixture.isConway2 (2 ms)
+[ RUN      ] FredkinCellFixture.isConway3
+[       OK ] FredkinCellFixture.isConway3 (2 ms)
+[ RUN      ] FredkinCellFixture.stream1
+[       OK ] FredkinCellFixture.stream1 (2 ms)
+[ RUN      ] FredkinCellFixture.stream2
+[       OK ] FredkinCellFixture.stream2 (2 ms)
+[ RUN      ] FredkinCellFixture.stream3
+[       OK ] FredkinCellFixture.stream3 (3 ms)
+[ RUN      ] FredkinCellFixture.stream4
+[       OK ] FredkinCellFixture.stream4 (2 ms)
+[ RUN      ] FredkinCellFixture.equals1
+[       OK ] FredkinCellFixture.equals1 (2 ms)
+[ RUN      ] FredkinCellFixture.equals2
+[       OK ] FredkinCellFixture.equals2 (2 ms)
+[ RUN      ] FredkinCellFixture.equals3
+[       OK ] FredkinCellFixture.equals3 (2 ms)
+[ RUN      ] FredkinCellFixture.equals4
+[       OK ] FredkinCellFixture.equals4 (2 ms)
+[ RUN      ] FredkinCellFixture.equals5
+[       OK ] FredkinCellFixture.equals5 (2 ms)
+[ RUN      ] FredkinCellFixture.equals6
+[       OK ] FredkinCellFixture.equals6 (2 ms)
+[----------] 30 tests from FredkinCellFixture (75 ms total)
+
+[----------] 42 tests from CellFixture
+[ RUN      ] CellFixture.defaultConstructor1
+[       OK ] CellFixture.defaultConstructor1 (1 ms)
+[ RUN      ] CellFixture.defaultConstructor2
+[       OK ] CellFixture.defaultConstructor2 (2 ms)
+[ RUN      ] CellFixture.AbstractCellConstructor1
+[       OK ] CellFixture.AbstractCellConstructor1 (2 ms)
+[ RUN      ] CellFixture.AbstractCellConstructor2
+[       OK ] CellFixture.AbstractCellConstructor2 (3 ms)
+[ RUN      ] CellFixture.AbstractCellConstructor3
+[       OK ] CellFixture.AbstractCellConstructor3 (3 ms)
+[ RUN      ] CellFixture.objectConstructor1
+[       OK ] CellFixture.objectConstructor1 (2 ms)
+[ RUN      ] CellFixture.objectConstructor2
+[       OK ] CellFixture.objectConstructor2 (2 ms)
+[ RUN      ] CellFixture.objectConstructor3
+[       OK ] CellFixture.objectConstructor3 (2 ms)
+[ RUN      ] CellFixture.objectConstructor4
+[       OK ] CellFixture.objectConstructor4 (3 ms)
+[ RUN      ] CellFixture.objectConstructor5
+[       OK ] CellFixture.objectConstructor5 (3 ms)
+[ RUN      ] CellFixture.copyConstructor1
+[       OK ] CellFixture.copyConstructor1 (2 ms)
+[ RUN      ] CellFixture.copyConstructor2
+[       OK ] CellFixture.copyConstructor2 (4 ms)
+[ RUN      ] CellFixture.copyConstructor3
+[       OK ] CellFixture.copyConstructor3 (5 ms)
+[ RUN      ] CellFixture.copyAssignmentConstructor1
+[       OK ] CellFixture.copyAssignmentConstructor1 (2 ms)
+[ RUN      ] CellFixture.copyAssignmentConstructor2
+[       OK ] CellFixture.copyAssignmentConstructor2 (6 ms)
+[ RUN      ] CellFixture.copyAssignmentConstructor3
+[       OK ] CellFixture.copyAssignmentConstructor3 (7 ms)
+[ RUN      ] CellFixture.modifyCell1
+[       OK ] CellFixture.modifyCell1 (1 ms)
+[ RUN      ] CellFixture.modifyCell2
+[       OK ] CellFixture.modifyCell2 (3 ms)
+[ RUN      ] CellFixture.modifyCell3
+[       OK ] CellFixture.modifyCell3 (3 ms)
+[ RUN      ] CellFixture.modifyCell4
+[       OK ] CellFixture.modifyCell4 (2 ms)
+[ RUN      ] CellFixture.modifyCell5
+[       OK ] CellFixture.modifyCell5 (3 ms)
+[ RUN      ] CellFixture.modifyCell6
+[       OK ] CellFixture.modifyCell6 (3 ms)
+[ RUN      ] CellFixture.modifyCell7
+[       OK ] CellFixture.modifyCell7 (3 ms)
+[ RUN      ] CellFixture.modifyCell8
+[       OK ] CellFixture.modifyCell8 (4 ms)
+[ RUN      ] CellFixture.isConway1
+[       OK ] CellFixture.isConway1 (2 ms)
+[ RUN      ] CellFixture.isConway2
+[       OK ] CellFixture.isConway2 (1 ms)
+[ RUN      ] CellFixture.isConway3
+[       OK ] CellFixture.isConway3 (2 ms)
+[ RUN      ] CellFixture.isConway4
+[       OK ] CellFixture.isConway4 (2 ms)
+[ RUN      ] CellFixture.countLiveCell1
+[       OK ] CellFixture.countLiveCell1 (31 ms)
+[ RUN      ] CellFixture.countLiveCell2
+[       OK ] CellFixture.countLiveCell2 (2 ms)
+[ RUN      ] CellFixture.countLiveCell3
+[       OK ] CellFixture.countLiveCell3 (2 ms)
+[ RUN      ] CellFixture.countLiveCell4
+[       OK ] CellFixture.countLiveCell4 (2 ms)
+[ RUN      ] CellFixture.stream1
+[       OK ] CellFixture.stream1 (3 ms)
+[ RUN      ] CellFixture.stream2
+[       OK ] CellFixture.stream2 (2 ms)
+[ RUN      ] CellFixture.stream3
+[       OK ] CellFixture.stream3 (2 ms)
+[ RUN      ] CellFixture.stream4
+[       OK ] CellFixture.stream4 (2 ms)
+[ RUN      ] CellFixture.equals1
+[       OK ] CellFixture.equals1 (2 ms)
+[ RUN      ] CellFixture.equals2
+[       OK ] CellFixture.equals2 (2 ms)
+[ RUN      ] CellFixture.equals3
+[       OK ] CellFixture.equals3 (2 ms)
+[ RUN      ] CellFixture.equals4
+[       OK ] CellFixture.equals4 (2 ms)
+[ RUN      ] CellFixture.equals5
+[       OK ] CellFixture.equals5 (3 ms)
+[ RUN      ] CellFixture.equals6
+[       OK ] CellFixture.equals6 (2 ms)
+[----------] 42 tests from CellFixture (140 ms total)
+
+[----------] 45 tests from LifeFixture
+[ RUN      ] LifeFixture.defaultConstructor1
+[       OK ] LifeFixture.defaultConstructor1 (6 ms)
+[ RUN      ] LifeFixture.defaultConstructor2
+[       OK ] LifeFixture.defaultConstructor2 (4 ms)
+[ RUN      ] LifeFixture.objectConstructor1
+[       OK ] LifeFixture.objectConstructor1 (10 ms)
+[ RUN      ] LifeFixture.objectConstructor2
+[       OK ] LifeFixture.objectConstructor2 (4 ms)
+[ RUN      ] LifeFixture.objectConstructor3
+[       OK ] LifeFixture.objectConstructor3 (4 ms)
+[ RUN      ] LifeFixture.addCell1
+[       OK ] LifeFixture.addCell1 (3 ms)
+[ RUN      ] LifeFixture.addCell2
+[       OK ] LifeFixture.addCell2 (2 ms)
+[ RUN      ] LifeFixture.addCell3
+[       OK ] LifeFixture.addCell3 (3 ms)
+[ RUN      ] LifeFixture.addCell4
+[       OK ] LifeFixture.addCell4 (3 ms)
+[ RUN      ] LifeFixture.addCell5
+[       OK ] LifeFixture.addCell5 (10 ms)
+[ RUN      ] LifeFixture.addCell6
+[       OK ] LifeFixture.addCell6 (6 ms)
+[ RUN      ] LifeFixture.addCell7
+[       OK ] LifeFixture.addCell7 (5 ms)
+[ RUN      ] LifeFixture.addCell8
+[       OK ] LifeFixture.addCell8 (14 ms)
+[ RUN      ] LifeFixture.addCell9
+[       OK ] LifeFixture.addCell9 (6 ms)
+[ RUN      ] LifeFixture.addCell10
+[       OK ] LifeFixture.addCell10 (5 ms)
+[ RUN      ] LifeFixture.addCell11
+[       OK ] LifeFixture.addCell11 (4 ms)
+[ RUN      ] LifeFixture.addCell12
+[       OK ] LifeFixture.addCell12 (3 ms)
+[ RUN      ] LifeFixture.addCell13
+[       OK ] LifeFixture.addCell13 (6 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors1
+[       OK ] LifeFixture.countLivingNeighbors1 (23 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors2
+[       OK ] LifeFixture.countLivingNeighbors2 (6 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors3
+[       OK ] LifeFixture.countLivingNeighbors3 (6 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors4
+[       OK ] LifeFixture.countLivingNeighbors4 (3 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors5
+[       OK ] LifeFixture.countLivingNeighbors5 (2 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors6
+[       OK ] LifeFixture.countLivingNeighbors6 (2 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors7
+[       OK ] LifeFixture.countLivingNeighbors7 (3 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors8
+[       OK ] LifeFixture.countLivingNeighbors8 (3 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors9
+[       OK ] LifeFixture.countLivingNeighbors9 (2 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors10
+[       OK ] LifeFixture.countLivingNeighbors10 (2 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors11
+[       OK ] LifeFixture.countLivingNeighbors11 (2 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors12
+[       OK ] LifeFixture.countLivingNeighbors12 (2 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors13
+[       OK ] LifeFixture.countLivingNeighbors13 (3 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors14
+[       OK ] LifeFixture.countLivingNeighbors14 (2 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors15
+[       OK ] LifeFixture.countLivingNeighbors15 (3 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors16
+[       OK ] LifeFixture.countLivingNeighbors16 (4 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors17
+[       OK ] LifeFixture.countLivingNeighbors17 (3 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors18
+[       OK ] LifeFixture.countLivingNeighbors18 (3 ms)
+[ RUN      ] LifeFixture.countLivingNeighbors19
+[       OK ] LifeFixture.countLivingNeighbors19 (4 ms)
+[ RUN      ] LifeFixture.simulate
+[       OK ] LifeFixture.simulate (13 ms)
+[ RUN      ] LifeFixture.stream1
+[       OK ] LifeFixture.stream1 (3 ms)
+[ RUN      ] LifeFixture.stream2
+[       OK ] LifeFixture.stream2 (3 ms)
+[ RUN      ] LifeFixture.stream3
+[       OK ] LifeFixture.stream3 (2 ms)
+[ RUN      ] LifeFixture.stream4
+[       OK ] LifeFixture.stream4 (3 ms)
+[ RUN      ] LifeFixture.stream5
+[       OK ] LifeFixture.stream5 (2 ms)
+[ RUN      ] LifeFixture.stream6
+[       OK ] LifeFixture.stream6 (2 ms)
+[ RUN      ] LifeFixture.stream7
+[       OK ] LifeFixture.stream7 (2 ms)
+[----------] 45 tests from LifeFixture (209 ms total)
+
+[----------] Global test environment tear-down
+[==========] 143 tests from 4 test cases ran. (527 ms total)
+[  PASSED  ] 143 tests.
+==7261== 
+==7261== HEAP SUMMARY:
+==7261==     in use at exit: 0 bytes in 0 blocks
+==7261==   total heap usage: 2,960 allocs, 2,960 frees, 312,586 bytes allocated
+==7261== 
+==7261== All heap blocks were freed -- no leaks are possible
+==7261== 
+==7261== For counts of detected and suppressed errors, rerun with: -v
+==7261== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:97.06% of 204
+Branches executed:88.84% of 430
+Taken at least once:61.86% of 430
+Calls executed:63.64% of 352
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:94.49% of 1017
+Branches executed:51.60% of 5806
+Taken at least once:26.25% of 5806
+Calls executed:43.01% of 6175
+Creating 'TestLife.c++.gcov'
