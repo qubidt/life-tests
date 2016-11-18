@@ -1,0 +1,190 @@
+==29== Memcheck, a memory error detector
+==29== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==29== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==29== Command: ./TestLife
+==29== 
+Running main() from gtest_main.cc
+[==========] Running 70 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 13 tests from TestConwayCell
+[ RUN      ] TestConwayCell.test_constructor
+[       OK ] TestConwayCell.test_constructor (15 ms)
+[ RUN      ] TestConwayCell.test_constructor_default_parameter
+[       OK ] TestConwayCell.test_constructor_default_parameter (3 ms)
+[ RUN      ] TestConwayCell.test_character_representation_alive
+[       OK ] TestConwayCell.test_character_representation_alive (8 ms)
+[ RUN      ] TestConwayCell.test_character_representation_dead
+[       OK ] TestConwayCell.test_character_representation_dead (3 ms)
+[ RUN      ] TestConwayCell.test_count_neighbors_full
+[       OK ] TestConwayCell.test_count_neighbors_full (33 ms)
+[ RUN      ] TestConwayCell.test_count_neighbors_empty
+[       OK ] TestConwayCell.test_count_neighbors_empty (5 ms)
+[ RUN      ] TestConwayCell.test_count_neighbors_middle_ignored
+[       OK ] TestConwayCell.test_count_neighbors_middle_ignored (6 ms)
+[ RUN      ] TestConwayCell.test_count_neighbors_sparse
+[       OK ] TestConwayCell.test_count_neighbors_sparse (6 ms)
+[ RUN      ] TestConwayCell.test_count_neighbors_corners
+[       OK ] TestConwayCell.test_count_neighbors_corners (8 ms)
+[ RUN      ] TestConwayCell.test_execute_turn_general
+[       OK ] TestConwayCell.test_execute_turn_general (11 ms)
+[ RUN      ] TestConwayCell.test_execute_turn_dead_to_live
+[       OK ] TestConwayCell.test_execute_turn_dead_to_live (10 ms)
+[ RUN      ] TestConwayCell.test_clone_basic
+[       OK ] TestConwayCell.test_clone_basic (5 ms)
+[ RUN      ] TestConwayCell.test_clone_not_same_address
+[       OK ] TestConwayCell.test_clone_not_same_address (3 ms)
+[----------] 13 tests from TestConwayCell (150 ms total)
+
+[----------] 21 tests from TestFredkinCell
+[ RUN      ] TestFredkinCell.test_constructor
+[       OK ] TestFredkinCell.test_constructor (4 ms)
+[ RUN      ] TestFredkinCell.test_constructor_default_parameter
+[       OK ] TestFredkinCell.test_constructor_default_parameter (3 ms)
+[ RUN      ] TestFredkinCell.test_character_representation_alive
+[       OK ] TestFredkinCell.test_character_representation_alive (3 ms)
+[ RUN      ] TestFredkinCell.test_character_representation_five
+[       OK ] TestFredkinCell.test_character_representation_five (3 ms)
+[ RUN      ] TestFredkinCell.test_character_representation_dead
+[       OK ] TestFredkinCell.test_character_representation_dead (4 ms)
+[ RUN      ] TestFredkinCell.test_character_representation_older_than_ten
+[       OK ] TestFredkinCell.test_character_representation_older_than_ten (4 ms)
+[ RUN      ] TestFredkinCell.test_count_neighbors_full
+[       OK ] TestFredkinCell.test_count_neighbors_full (7 ms)
+[ RUN      ] TestFredkinCell.test_count_neighbors_empty
+[       OK ] TestFredkinCell.test_count_neighbors_empty (5 ms)
+[ RUN      ] TestFredkinCell.test_count_neighbors_middle_ignored
+[       OK ] TestFredkinCell.test_count_neighbors_middle_ignored (7 ms)
+[ RUN      ] TestFredkinCell.test_count_neighbors_sparse
+[       OK ] TestFredkinCell.test_count_neighbors_sparse (6 ms)
+[ RUN      ] TestFredkinCell.test_count_neighbors_corners
+[       OK ] TestFredkinCell.test_count_neighbors_corners (6 ms)
+[ RUN      ] TestFredkinCell.test_count_neighbors_edges
+[       OK ] TestFredkinCell.test_count_neighbors_edges (7 ms)
+[ RUN      ] TestFredkinCell.test_count_neighbors_corners_and_edges
+[       OK ] TestFredkinCell.test_count_neighbors_corners_and_edges (7 ms)
+[ RUN      ] TestFredkinCell.test_execute_turn_general
+[       OK ] TestFredkinCell.test_execute_turn_general (13 ms)
+[ RUN      ] TestFredkinCell.test_aging_basic
+[       OK ] TestFredkinCell.test_aging_basic (10 ms)
+[ RUN      ] TestFredkinCell.test_aging_and_dying
+[       OK ] TestFredkinCell.test_aging_and_dying (12 ms)
+[ RUN      ] TestFredkinCell.test_can_evlolve_basic
+[       OK ] TestFredkinCell.test_can_evlolve_basic (3 ms)
+[ RUN      ] TestFredkinCell.test_can_evlolve_too_young
+[       OK ] TestFredkinCell.test_can_evlolve_too_young (2 ms)
+[ RUN      ] TestFredkinCell.test_can_evlolve_too_old
+[       OK ] TestFredkinCell.test_can_evlolve_too_old (3 ms)
+[ RUN      ] TestFredkinCell.test_can_evlolve_dead
+[       OK ] TestFredkinCell.test_can_evlolve_dead (3 ms)
+[ RUN      ] TestFredkinCell.test_clone_basic
+[       OK ] TestFredkinCell.test_clone_basic (5 ms)
+[----------] 21 tests from TestFredkinCell (153 ms total)
+
+[----------] 22 tests from TestCell
+[ RUN      ] TestCell.test_constructor
+[       OK ] TestCell.test_constructor (4 ms)
+[ RUN      ] TestCell.test_copy_constructor
+[       OK ] TestCell.test_copy_constructor (7 ms)
+[ RUN      ] TestCell.test_copy_assignment
+[       OK ] TestCell.test_copy_assignment (8 ms)
+[ RUN      ] TestCell.test_clone_basic
+[       OK ] TestCell.test_clone_basic (4 ms)
+[ RUN      ] TestCell.test_clone_fredkin
+[       OK ] TestCell.test_clone_fredkin (4 ms)
+[ RUN      ] TestCell.test_character_representation_basic
+[       OK ] TestCell.test_character_representation_basic (4 ms)
+[ RUN      ] TestCell.test_character_representation_conway_alive
+[       OK ] TestCell.test_character_representation_conway_alive (3 ms)
+[ RUN      ] TestCell.test_character_representation_conway_dead
+[       OK ] TestCell.test_character_representation_conway_dead (3 ms)
+[ RUN      ] TestCell.test_character_representation_fredkin_five
+[       OK ] TestCell.test_character_representation_fredkin_five (4 ms)
+[ RUN      ] TestCell.test_character_representation_fredkin_old
+[       OK ] TestCell.test_character_representation_fredkin_old (4 ms)
+[ RUN      ] TestCell.test_character_representation_fredkin_dead
+[       OK ] TestCell.test_character_representation_fredkin_dead (4 ms)
+[ RUN      ] TestCell.test_execute_turn_general
+[       OK ] TestCell.test_execute_turn_general (10 ms)
+[ RUN      ] TestCell.test_execute_turn_mutate
+[       OK ] TestCell.test_execute_turn_mutate (11 ms)
+[ RUN      ] TestCell.test_count_neighbors_empty_conway
+[       OK ] TestCell.test_count_neighbors_empty_conway (5 ms)
+[ RUN      ] TestCell.test_count_neighbors_empty_fredkin
+[       OK ] TestCell.test_count_neighbors_empty_fredkin (5 ms)
+[ RUN      ] TestCell.test_count_neighbors_full_conway
+[       OK ] TestCell.test_count_neighbors_full_conway (5 ms)
+[ RUN      ] TestCell.test_count_neighbors_full_fredkin
+[       OK ] TestCell.test_count_neighbors_full_fredkin (6 ms)
+[ RUN      ] TestCell.test_count_neighbors_corners_conway
+[       OK ] TestCell.test_count_neighbors_corners_conway (7 ms)
+[ RUN      ] TestCell.test_count_neighbors_corners_fredkin
+[       OK ] TestCell.test_count_neighbors_corners_fredkin (7 ms)
+[ RUN      ] TestCell.test_cell_is_alive_fredkin
+[       OK ] TestCell.test_cell_is_alive_fredkin (4 ms)
+[ RUN      ] TestCell.test_cell_is_alive_conway
+[       OK ] TestCell.test_cell_is_alive_conway (3 ms)
+[ RUN      ] TestCell.test_cell_is_alive_conway_dead
+[       OK ] TestCell.test_cell_is_alive_conway_dead (3 ms)
+[----------] 22 tests from TestCell (157 ms total)
+
+[----------] 14 tests from TestLife
+[ RUN      ] TestLife.test_constructor
+[       OK ] TestLife.test_constructor (42 ms)
+[ RUN      ] TestLife.test_copy_constructor
+[       OK ] TestLife.test_copy_constructor (16 ms)
+[ RUN      ] TestLife.test_copy_assignment
+[       OK ] TestLife.test_copy_assignment (26 ms)
+[ RUN      ] TestLife.test_populate_cell_basic
+[       OK ] TestLife.test_populate_cell_basic (42 ms)
+[ RUN      ] TestLife.test_populate_cell_cell
+[       OK ] TestLife.test_populate_cell_cell (58 ms)
+[ RUN      ] TestLife.test_simulate_basic
+[       OK ] TestLife.test_simulate_basic (69 ms)
+[ RUN      ] TestLife.test_simulate_one_by_one
+[       OK ] TestLife.test_simulate_one_by_one (5 ms)
+[ RUN      ] TestLife.test_simulate_generation
+[       OK ] TestLife.test_simulate_generation (3 ms)
+[ RUN      ] TestLife.test_simulate_partial_death
+[       OK ] TestLife.test_simulate_partial_death (13 ms)
+[ RUN      ] TestLife.test_simulate_conversion
+[       OK ] TestLife.test_simulate_conversion (16 ms)
+[ RUN      ] TestLife.test_output_operator
+[       OK ] TestLife.test_output_operator (19 ms)
+[ RUN      ] TestLife.test_output_operator_one_by_one
+[       OK ] TestLife.test_output_operator_one_by_one (63 ms)
+[ RUN      ] TestLife.test_output_operator_dead_and_alive
+[       OK ] TestLife.test_output_operator_dead_and_alive (10 ms)
+[ RUN      ] TestLife.test_output_operator_cell
+[       OK ] TestLife.test_output_operator_cell (16 ms)
+[----------] 14 tests from TestLife (423 ms total)
+
+[----------] Global test environment tear-down
+[==========] 70 tests from 4 test cases ran. (952 ms total)
+[  PASSED  ] 70 tests.
+==29== 
+==29== HEAP SUMMARY:
+==29==     in use at exit: 73,240 bytes in 32 blocks
+==29==   total heap usage: 1,468 allocs, 1,436 frees, 259,773 bytes allocated
+==29== 
+==29== LEAK SUMMARY:
+==29==    definitely lost: 456 bytes in 26 blocks
+==29==    indirectly lost: 80 bytes in 5 blocks
+==29==      possibly lost: 0 bytes in 0 blocks
+==29==    still reachable: 72,704 bytes in 1 blocks
+==29==         suppressed: 0 bytes in 0 blocks
+==29== Rerun with --leak-check=full to see details of leaked memory
+==29== 
+==29== For counts of detected and suppressed errors, rerun with: -v
+==29== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:93.89% of 180
+Branches executed:92.23% of 206
+Taken at least once:67.96% of 206
+Calls executed:76.07% of 326
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 515
+Branches executed:62.69% of 3104
+Taken at least once:32.18% of 3104
+Calls executed:50.76% of 3662
+Creating 'TestLife.c++.gcov'
