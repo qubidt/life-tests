@@ -1,38 +1,77 @@
-==41100== Memcheck, a memory error detector
-==41100== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
-==41100== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
-==41100== Command: ./TestLife
-==41100==
---41100-- run: /usr/bin/dsymutil "./TestLife"
 Running main() from gtest_main.cc
-[==========] Running 1 test from 1 test case.
+[==========] Running 31 tests from 3 test cases.
 [----------] Global test environment set-up.
-[----------] 1 test from LifeFixture
-[ RUN      ] LifeFixture.test
-[       OK ] LifeFixture.test (14 ms)
-[----------] 1 test from LifeFixture (25 ms total)
+[----------] 7 tests from TestLife/0, where TypeParam = ConwayCell
+[ RUN      ] TestLife/0.alive_1
+[       OK ] TestLife/0.alive_1 (0 ms)
+[ RUN      ] TestLife/0.evolve1
+[       OK ] TestLife/0.evolve1 (0 ms)
+[ RUN      ] TestLife/0.evolve2
+[       OK ] TestLife/0.evolve2 (0 ms)
+[ RUN      ] TestLife/0.evolve3
+[       OK ] TestLife/0.evolve3 (0 ms)
+[ RUN      ] TestLife/0.toString1
+[       OK ] TestLife/0.toString1 (0 ms)
+[ RUN      ] TestLife/0.toString2
+[       OK ] TestLife/0.toString2 (0 ms)
+[ RUN      ] TestLife/0.toString3
+[       OK ] TestLife/0.toString3 (0 ms)
+[----------] 7 tests from TestLife/0 (1 ms total)
+
+[----------] 7 tests from TestLife/1, where TypeParam = FredkinCell
+[ RUN      ] TestLife/1.alive_1
+[       OK ] TestLife/1.alive_1 (0 ms)
+[ RUN      ] TestLife/1.evolve1
+[       OK ] TestLife/1.evolve1 (0 ms)
+[ RUN      ] TestLife/1.evolve2
+[       OK ] TestLife/1.evolve2 (0 ms)
+[ RUN      ] TestLife/1.evolve3
+[       OK ] TestLife/1.evolve3 (0 ms)
+[ RUN      ] TestLife/1.toString1
+[       OK ] TestLife/1.toString1 (0 ms)
+[ RUN      ] TestLife/1.toString2
+[       OK ] TestLife/1.toString2 (0 ms)
+[ RUN      ] TestLife/1.toString3
+[       OK ] TestLife/1.toString3 (0 ms)
+[----------] 7 tests from TestLife/1 (0 ms total)
+
+[----------] 17 tests from LifeFixture
+[ RUN      ] LifeFixture.construct1
+[       OK ] LifeFixture.construct1 (0 ms)
+[ RUN      ] LifeFixture.construct2
+[       OK ] LifeFixture.construct2 (0 ms)
+[ RUN      ] LifeFixture.string1
+[       OK ] LifeFixture.string1 (0 ms)
+[ RUN      ] LifeFixture.string2
+[       OK ] LifeFixture.string2 (0 ms)
+[ RUN      ] LifeFixture.string3
+[       OK ] LifeFixture.string3 (0 ms)
+[ RUN      ] LifeFixture.string4
+[       OK ] LifeFixture.string4 (0 ms)
+[ RUN      ] LifeFixture.equalop1
+[       OK ] LifeFixture.equalop1 (0 ms)
+[ RUN      ] LifeFixture.equalop2
+[       OK ] LifeFixture.equalop2 (0 ms)
+[ RUN      ] LifeFixture.equalop3
+[       OK ] LifeFixture.equalop3 (0 ms)
+[ RUN      ] LifeFixture.equalop4
+[       OK ] LifeFixture.equalop4 (0 ms)
+[ RUN      ] LifeFixture.cellevolve1
+[       OK ] LifeFixture.cellevolve1 (0 ms)
+[ RUN      ] LifeFixture.cellevolve2
+[       OK ] LifeFixture.cellevolve2 (0 ms)
+[ RUN      ] LifeFixture.cellevolve3
+[       OK ] LifeFixture.cellevolve3 (0 ms)
+[ RUN      ] LifeFixture.life1
+[       OK ] LifeFixture.life1 (0 ms)
+[ RUN      ] LifeFixture.life2
+[       OK ] LifeFixture.life2 (0 ms)
+[ RUN      ] LifeFixture.life3
+[       OK ] LifeFixture.life3 (0 ms)
+[ RUN      ] LifeFixture.life4
+[       OK ] LifeFixture.life4 (0 ms)
+[----------] 17 tests from LifeFixture (0 ms total)
 
 [----------] Global test environment tear-down
-[==========] 1 test from 1 test case ran. (67 ms total)
-[  PASSED  ] 1 test.
-==41100==
-==41100== HEAP SUMMARY:
-==41100==     in use at exit: 26,417 bytes in 196 blocks
-==41100==   total heap usage: 364 allocs, 168 frees, 182,465 bytes allocated
-==41100==
-==41100== LEAK SUMMARY:
-==41100==    definitely lost: 0 bytes in 0 blocks
-==41100==    indirectly lost: 0 bytes in 0 blocks
-==41100==      possibly lost: 2,064 bytes in 1 blocks
-==41100==    still reachable: 0 bytes in 0 blocks
-==41100==         suppressed: 24,353 bytes in 195 blocks
-==41100== Rerun with --leak-check=full to see details of leaked memory
-==41100==
-==41100== For counts of detected and suppressed errors, rerun with: -v
-==41100== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-File 'TestLife.c++'
-Lines executed:100.00% of 2
-Branches executed:52.94% of 17
-Taken at least once:23.53% of 17
-No calls
-TestLife.c++:creating 'TestLife.c++.gcov'
+[==========] 31 tests from 3 test cases ran. (1 ms total)
+[  PASSED  ] 31 tests.
