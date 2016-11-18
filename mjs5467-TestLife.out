@@ -1,0 +1,170 @@
+==1793== Memcheck, a memory error detector
+==1793== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==1793== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==1793== Command: ./TestLife
+==1793== 
+Running main() from gtest_main.cc
+[==========] Running 60 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 11 tests from ConwayFixture
+[ RUN      ] ConwayFixture.test1
+[       OK ] ConwayFixture.test1 (31 ms)
+[ RUN      ] ConwayFixture.test2
+[       OK ] ConwayFixture.test2 (5 ms)
+[ RUN      ] ConwayFixture.test3
+[       OK ] ConwayFixture.test3 (6 ms)
+[ RUN      ] ConwayFixture.test4
+[       OK ] ConwayFixture.test4 (7 ms)
+[ RUN      ] ConwayFixture.test5
+[       OK ] ConwayFixture.test5 (7 ms)
+[ RUN      ] ConwayFixture.test6
+[       OK ] ConwayFixture.test6 (5 ms)
+[ RUN      ] ConwayFixture.test7
+[       OK ] ConwayFixture.test7 (5 ms)
+[ RUN      ] ConwayFixture.test8
+[       OK ] ConwayFixture.test8 (5 ms)
+[ RUN      ] ConwayFixture.test9
+[       OK ] ConwayFixture.test9 (5 ms)
+[ RUN      ] ConwayFixture.test10
+[       OK ] ConwayFixture.test10 (5 ms)
+[ RUN      ] ConwayFixture.test11
+[       OK ] ConwayFixture.test11 (5 ms)
+[----------] 11 tests from ConwayFixture (112 ms total)
+
+[----------] 19 tests from FredkinFixture
+[ RUN      ] FredkinFixture.test1
+[       OK ] FredkinFixture.test1 (6 ms)
+[ RUN      ] FredkinFixture.test2
+[       OK ] FredkinFixture.test2 (8 ms)
+[ RUN      ] FredkinFixture.test3
+[       OK ] FredkinFixture.test3 (4 ms)
+[ RUN      ] FredkinFixture.test4
+[       OK ] FredkinFixture.test4 (5 ms)
+[ RUN      ] FredkinFixture.test5
+[       OK ] FredkinFixture.test5 (5 ms)
+[ RUN      ] FredkinFixture.test6
+[       OK ] FredkinFixture.test6 (6 ms)
+[ RUN      ] FredkinFixture.test7
+[       OK ] FredkinFixture.test7 (6 ms)
+[ RUN      ] FredkinFixture.test8
+[       OK ] FredkinFixture.test8 (6 ms)
+[ RUN      ] FredkinFixture.test9
+[       OK ] FredkinFixture.test9 (6 ms)
+[ RUN      ] FredkinFixture.test10
+[       OK ] FredkinFixture.test10 (5 ms)
+[ RUN      ] FredkinFixture.test11
+[       OK ] FredkinFixture.test11 (7 ms)
+[ RUN      ] FredkinFixture.test12
+[       OK ] FredkinFixture.test12 (5 ms)
+[ RUN      ] FredkinFixture.test13
+[       OK ] FredkinFixture.test13 (5 ms)
+[ RUN      ] FredkinFixture.test14
+[       OK ] FredkinFixture.test14 (8 ms)
+[ RUN      ] FredkinFixture.test15
+[       OK ] FredkinFixture.test15 (4 ms)
+[ RUN      ] FredkinFixture.test16
+[       OK ] FredkinFixture.test16 (5 ms)
+[ RUN      ] FredkinFixture.test17
+[       OK ] FredkinFixture.test17 (7 ms)
+[ RUN      ] FredkinFixture.test18
+[       OK ] FredkinFixture.test18 (5 ms)
+[ RUN      ] FredkinFixture.test19
+[       OK ] FredkinFixture.test19 (6 ms)
+[----------] 19 tests from FredkinFixture (119 ms total)
+
+[----------] 15 tests from CellFixture
+[ RUN      ] CellFixture.test1
+[       OK ] CellFixture.test1 (6 ms)
+[ RUN      ] CellFixture.test2
+[       OK ] CellFixture.test2 (5 ms)
+[ RUN      ] CellFixture.test3
+[       OK ] CellFixture.test3 (6 ms)
+[ RUN      ] CellFixture.test4
+[       OK ] CellFixture.test4 (6 ms)
+[ RUN      ] CellFixture.test5
+[       OK ] CellFixture.test5 (6 ms)
+[ RUN      ] CellFixture.test6
+[       OK ] CellFixture.test6 (8 ms)
+[ RUN      ] CellFixture.test7
+[       OK ] CellFixture.test7 (10 ms)
+[ RUN      ] CellFixture.test8
+[       OK ] CellFixture.test8 (6 ms)
+[ RUN      ] CellFixture.test9
+[       OK ] CellFixture.test9 (7 ms)
+[ RUN      ] CellFixture.test10
+[       OK ] CellFixture.test10 (7 ms)
+[ RUN      ] CellFixture.test11
+[       OK ] CellFixture.test11 (9 ms)
+[ RUN      ] CellFixture.test12
+[       OK ] CellFixture.test12 (9 ms)
+[ RUN      ] CellFixture.test13
+[       OK ] CellFixture.test13 (6 ms)
+[ RUN      ] CellFixture.test14
+[       OK ] CellFixture.test14 (7 ms)
+[ RUN      ] CellFixture.test15
+[       OK ] CellFixture.test15 (7 ms)
+[----------] 15 tests from CellFixture (113 ms total)
+
+[----------] 15 tests from LifeFixture
+[ RUN      ] LifeFixture.test1
+[       OK ] LifeFixture.test1 (65 ms)
+[ RUN      ] LifeFixture.test2
+[       OK ] LifeFixture.test2 (61 ms)
+[ RUN      ] LifeFixture.test3
+[       OK ] LifeFixture.test3 (53 ms)
+[ RUN      ] LifeFixture.test4
+[       OK ] LifeFixture.test4 (16 ms)
+[ RUN      ] LifeFixture.test5
+[       OK ] LifeFixture.test5 (17 ms)
+[ RUN      ] LifeFixture.test6
+[       OK ] LifeFixture.test6 (21 ms)
+[ RUN      ] LifeFixture.test7
+[       OK ] LifeFixture.test7 (20 ms)
+[ RUN      ] LifeFixture.test8
+[       OK ] LifeFixture.test8 (33 ms)
+[ RUN      ] LifeFixture.test9
+[       OK ] LifeFixture.test9 (10 ms)
+[ RUN      ] LifeFixture.test10
+[       OK ] LifeFixture.test10 (9 ms)
+[ RUN      ] LifeFixture.test11
+[       OK ] LifeFixture.test11 (8 ms)
+[ RUN      ] LifeFixture.test12
+[       OK ] LifeFixture.test12 (13 ms)
+[ RUN      ] LifeFixture.test13
+[       OK ] LifeFixture.test13 (9 ms)
+[ RUN      ] LifeFixture.test14
+[       OK ] LifeFixture.test14 (12 ms)
+[ RUN      ] LifeFixture.test15
+[       OK ] LifeFixture.test15 (10 ms)
+[----------] 15 tests from LifeFixture (360 ms total)
+
+[----------] Global test environment tear-down
+[==========] 60 tests from 4 test cases ran. (797 ms total)
+[  PASSED  ] 60 tests.
+==1793== 
+==1793== HEAP SUMMARY:
+==1793==     in use at exit: 72,704 bytes in 1 blocks
+==1793==   total heap usage: 834 allocs, 833 frees, 246,519 bytes allocated
+==1793== 
+==1793== LEAK SUMMARY:
+==1793==    definitely lost: 0 bytes in 0 blocks
+==1793==    indirectly lost: 0 bytes in 0 blocks
+==1793==      possibly lost: 0 bytes in 0 blocks
+==1793==    still reachable: 72,704 bytes in 1 blocks
+==1793==         suppressed: 0 bytes in 0 blocks
+==1793== Rerun with --leak-check=full to see details of leaked memory
+==1793== 
+==1793== For counts of detected and suppressed errors, rerun with: -v
+==1793== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:99.14% of 116
+Branches executed:100.00% of 268
+Taken at least once:89.55% of 268
+Calls executed:91.88% of 234
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 422
+Branches executed:75.16% of 1932
+Taken at least once:37.58% of 1932
+Calls executed:63.79% of 2306
+Creating 'TestLife.c++.gcov'
