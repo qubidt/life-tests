@@ -1,0 +1,120 @@
+==1313== Memcheck, a memory error detector
+==1313== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==1313== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==1313== Command: ./TestLife
+==1313==
+Running main() from gtest_main.cc
+[==========] Running 35 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from AbstractCell
+[ RUN      ] AbstractCell.is_alive_1
+[       OK ] AbstractCell.is_alive_1 (14 ms)
+[ RUN      ] AbstractCell.is_alive_2
+[       OK ] AbstractCell.is_alive_2 (2 ms)
+[ RUN      ] AbstractCell.revive_1
+[       OK ] AbstractCell.revive_1 (3 ms)
+[ RUN      ] AbstractCell.revive_2
+[       OK ] AbstractCell.revive_2 (2 ms)
+[----------] 4 tests from AbstractCell (39 ms total)
+
+[----------] 10 tests from ConwayCell
+[ RUN      ] ConwayCell.simulate_1
+[       OK ] ConwayCell.simulate_1 (3 ms)
+[ RUN      ] ConwayCell.simulate_2
+[       OK ] ConwayCell.simulate_2 (5 ms)
+[ RUN      ] ConwayCell.simulate_3
+[       OK ] ConwayCell.simulate_3 (4 ms)
+[ RUN      ] ConwayCell.print_1
+[       OK ] ConwayCell.print_1 (6 ms)
+[ RUN      ] ConwayCell.print_2
+[       OK ] ConwayCell.print_2 (4 ms)
+[ RUN      ] ConwayCell.clone_1
+[       OK ] ConwayCell.clone_1 (4 ms)
+[ RUN      ] ConwayCell.clone_2
+[       OK ] ConwayCell.clone_2 (3 ms)
+[ RUN      ] ConwayCell.clone_3
+[       OK ] ConwayCell.clone_3 (3 ms)
+[ RUN      ] ConwayCell.type_1
+[       OK ] ConwayCell.type_1 (3 ms)
+[ RUN      ] ConwayCell.evolve_1
+[       OK ] ConwayCell.evolve_1 (4 ms)
+[----------] 10 tests from ConwayCell (48 ms total)
+
+[----------] 12 tests from FredkinCell
+[ RUN      ] FredkinCell.simulate_1
+[       OK ] FredkinCell.simulate_1 (4 ms)
+[ RUN      ] FredkinCell.simulate_2
+[       OK ] FredkinCell.simulate_2 (4 ms)
+[ RUN      ] FredkinCell.simulate_3
+[       OK ] FredkinCell.simulate_3 (4 ms)
+[ RUN      ] FredkinCell.print_1
+[       OK ] FredkinCell.print_1 (4 ms)
+[ RUN      ] FredkinCell.print_2
+[       OK ] FredkinCell.print_2 (4 ms)
+[ RUN      ] FredkinCell.print_3
+[       OK ] FredkinCell.print_3 (6 ms)
+[ RUN      ] FredkinCell.clone_1
+[       OK ] FredkinCell.clone_1 (6 ms)
+[ RUN      ] FredkinCell.clone_2
+[       OK ] FredkinCell.clone_2 (5 ms)
+[ RUN      ] FredkinCell.clone_3
+[       OK ] FredkinCell.clone_3 (5 ms)
+[ RUN      ] FredkinCell.type_1
+[       OK ] FredkinCell.type_1 (3 ms)
+[ RUN      ] FredkinCell.evolve_1
+[       OK ] FredkinCell.evolve_1 (3 ms)
+[ RUN      ] FredkinCell.evolve_2
+[       OK ] FredkinCell.evolve_2 (3 ms)
+[----------] 12 tests from FredkinCell (64 ms total)
+
+[----------] 9 tests from Life
+[ RUN      ] Life.build_1
+[       OK ] Life.build_1 (54 ms)
+[ RUN      ] Life.build_2
+[       OK ] Life.build_2 (31 ms)
+[ RUN      ] Life.build_3
+[       OK ] Life.build_3 (36 ms)
+[ RUN      ] Life.neighbor_count_1
+[       OK ] Life.neighbor_count_1 (16 ms)
+[ RUN      ] Life.neighbor_count_2
+[       OK ] Life.neighbor_count_2 (14 ms)
+[ RUN      ] Life.neighbor_count_3
+[       OK ] Life.neighbor_count_3 (18 ms)
+[ RUN      ] Life.simulate_1
+[       OK ] Life.simulate_1 (138 ms)
+[ RUN      ] Life.simulate_2
+[       OK ] Life.simulate_2 (23 ms)
+[ RUN      ] Life.simulate_3
+[       OK ] Life.simulate_3 (238 ms)
+[----------] 9 tests from Life (579 ms total)
+
+[----------] Global test environment tear-down
+[==========] 35 tests from 4 test cases ran. (802 ms total)
+[  PASSED  ] 35 tests.
+==1313==
+==1313== HEAP SUMMARY:
+==1313==     in use at exit: 73,104 bytes in 26 blocks
+==1313==   total heap usage: 3,542 allocs, 3,516 frees, 484,381 bytes allocated
+==1313==
+==1313== LEAK SUMMARY:
+==1313==    definitely lost: 400 bytes in 25 blocks
+==1313==    indirectly lost: 0 bytes in 0 blocks
+==1313==      possibly lost: 0 bytes in 0 blocks
+==1313==    still reachable: 72,704 bytes in 1 blocks
+==1313==         suppressed: 0 bytes in 0 blocks
+==1313== Rerun with --leak-check=full to see details of leaked memory
+==1313==
+==1313== For counts of detected and suppressed errors, rerun with: -v
+==1313== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:93.88% of 147
+Branches executed:88.06% of 268
+Taken at least once:57.84% of 268
+Calls executed:63.80% of 395
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 269
+Branches executed:59.40% of 1478
+Taken at least once:30.31% of 1478
+Calls executed:48.10% of 1524
+Creating 'TestLife.c++.gcov'
