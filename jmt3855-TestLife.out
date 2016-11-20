@@ -1,0 +1,377 @@
+==117206== Memcheck, a memory error detector
+==117206== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==117206== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==117206== Command: ./TestLife
+==117206==
+Running main() from gtest_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from LifeConstructor
+[ RUN      ] LifeConstructor.test1
+==117206== Invalid read of size 4
+==117206==    at 0x40B731: Life<ConwayCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x405F5D: LifeConstructor_test1_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c48b7c is 4 bytes before a block of size 52 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+==117206== Invalid read of size 4
+==117206==    at 0x40B786: Life<ConwayCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x405F5D: LifeConstructor_test1_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c48bfc is 4 bytes before a block of size 52 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+==117206== Invalid read of size 4
+==117206==    at 0x40B7DE: Life<ConwayCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x405F5D: LifeConstructor_test1_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c48c7c is 4 bytes before a block of size 52 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+==117206== Invalid read of size 4
+==117206==    at 0x40B684: Life<ConwayCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x405F5D: LifeConstructor_test1_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c48bb4 is 0 bytes after a block of size 52 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+==117206== Invalid read of size 4
+==117206==    at 0x40B6D9: Life<ConwayCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x405F5D: LifeConstructor_test1_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c48c34 is 0 bytes after a block of size 52 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+==117206== Invalid read of size 4
+==117206==    at 0x40B836: Life<ConwayCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x405F5D: LifeConstructor_test1_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c48cb4 is 0 bytes after a block of size 52 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+[       OK ] LifeConstructor.test1 (120 ms)
+[ RUN      ] LifeConstructor.test2
+==117206== Invalid read of size 4
+==117206==    at 0x40B731: Life<ConwayCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x407251: LifeConstructor_test2_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c4dedc is 4 bytes before a block of size 116 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+==117206== Invalid read of size 4
+==117206==    at 0x40B786: Life<ConwayCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x407251: LifeConstructor_test2_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c4df9c is 4 bytes before a block of size 116 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+==117206== Invalid read of size 4
+==117206==    at 0x40B7DE: Life<ConwayCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x407251: LifeConstructor_test2_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c4e05c is 4 bytes before a block of size 116 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+==117206== Invalid read of size 4
+==117206==    at 0x40B684: Life<ConwayCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x407251: LifeConstructor_test2_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c4df54 is 0 bytes after a block of size 116 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+==117206== Invalid read of size 4
+==117206==    at 0x40B6D9: Life<ConwayCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x407251: LifeConstructor_test2_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c4e014 is 0 bytes after a block of size 116 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+==117206== Invalid read of size 4
+==117206==    at 0x40B836: Life<ConwayCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x407251: LifeConstructor_test2_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c4e0d4 is 0 bytes after a block of size 116 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+[       OK ] LifeConstructor.test2 (14 ms)
+[ RUN      ] LifeConstructor.test3
+==117206== Invalid read of size 4
+==117206==    at 0x40EC71: Life<FredkinCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x408545: LifeConstructor_test3_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c52e8c is 4 bytes before a block of size 80 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+==117206== Invalid read of size 4
+==117206==    at 0x40EC1C: Life<FredkinCell>::run(int) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x408545: LifeConstructor_test3_Test::TestBody() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x43EFC2: void testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>(testing::Test*, void (testing::Test::*)(), char const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4319DC: testing::Test::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431A73: testing::TestInfo::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431B74: testing::TestCase::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x431DEC: testing::internal::UnitTestImpl::RunAllTests() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4320CD: testing::UnitTest::Run() (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x404C2F: main (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==  Address 0x5c52ee0 is 0 bytes after a block of size 80 alloc'd
+==117206==    at 0x4C2B0E0: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==117206==    by 0x4162E5: __gnu_cxx::new_allocator<int>::allocate(unsigned long, void const*) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41462C: std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41206E: std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41084A: std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4147B2: std::vector<int, std::allocator<int> >::vector(std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x41A382: void std::_Construct<std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > const&>(std::vector<int, std::allocator<int> >*, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x418385: void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x416770: void std::uninitialized_fill_n<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x414B9E: void std::__uninitialized_fill_n_a<std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> >, std::vector<int, std::allocator<int> > >(std::vector<int, std::allocator<int> >*, unsigned long, std::vector<int, std::allocator<int> > const&, std::allocator<std::vector<int, std::allocator<int> > >&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x4127A8: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::_M_fill_insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==    by 0x410AFB: std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::insert(__gnu_cxx::__normal_iterator<std::vector<int, std::allocator<int> >*, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > >, unsigned long, std::vector<int, std::allocator<int> > const&) (in /v/filer4b/v38q001/jtaubejr/classes/cs371p/fork/life-jmt3855/TestLife)
+==117206==
+[       OK ] LifeConstructor.test3 (69 ms)
+[----------] 3 tests from LifeConstructor (210 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (242 ms total)
+[  PASSED  ] 3 tests.
+==117206==
+==117206== HEAP SUMMARY:
+==117206==     in use at exit: 0 bytes in 0 blocks
+==117206==   total heap usage: 456 allocs, 456 frees, 86,683 bytes allocated
+==117206==
+==117206== All heap blocks were freed -- no leaks are possible
+==117206==
+==117206== For counts of detected and suppressed errors, rerun with: -v
+==117206== ERROR SUMMARY: 258 errors from 14 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:72.97% of 148
+Branches executed:71.20% of 250
+Taken at least once:57.20% of 250
+Calls executed:58.64% of 457
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 31
+Branches executed:51.68% of 298
+Taken at least once:25.84% of 298
+Calls executed:42.35% of 307
+Creating 'TestLife.c++.gcov'
