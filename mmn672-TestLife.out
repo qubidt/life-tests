@@ -1,0 +1,224 @@
+==5546== Memcheck, a memory error detector
+==5546== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==5546== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==5546== Command: ./TestLife
+==5546== 
+Running main() from gtest_main.cc
+[==========] Running 66 tests from 18 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from AbstractCell_toggle
+[ RUN      ] AbstractCell_toggle.now_dead_1
+[       OK ] AbstractCell_toggle.now_dead_1 (16 ms)
+[ RUN      ] AbstractCell_toggle.now_dead_2
+[       OK ] AbstractCell_toggle.now_dead_2 (3 ms)
+[ RUN      ] AbstractCell_toggle.now_alive_1
+[       OK ] AbstractCell_toggle.now_alive_1 (3 ms)
+[ RUN      ] AbstractCell_toggle.now_alive_2
+[       OK ] AbstractCell_toggle.now_alive_2 (3 ms)
+[----------] 4 tests from AbstractCell_toggle (39 ms total)
+
+[----------] 4 tests from AbstractCell_is_alive
+[ RUN      ] AbstractCell_is_alive.dead_1
+[       OK ] AbstractCell_is_alive.dead_1 (3 ms)
+[ RUN      ] AbstractCell_is_alive.dead_2
+[       OK ] AbstractCell_is_alive.dead_2 (3 ms)
+[ RUN      ] AbstractCell_is_alive.alive_1
+[       OK ] AbstractCell_is_alive.alive_1 (3 ms)
+[ RUN      ] AbstractCell_is_alive.alive_2
+[       OK ] AbstractCell_is_alive.alive_2 (2 ms)
+[----------] 4 tests from AbstractCell_is_alive (11 ms total)
+
+[----------] 3 tests from ConwayCell_constructor
+[ RUN      ] ConwayCell_constructor.dot
+[       OK ] ConwayCell_constructor.dot (4 ms)
+[ RUN      ] ConwayCell_constructor.star
+[       OK ] ConwayCell_constructor.star (3 ms)
+[ RUN      ] ConwayCell_constructor.other
+[       OK ] ConwayCell_constructor.other (4 ms)
+[----------] 3 tests from ConwayCell_constructor (12 ms total)
+
+[----------] 3 tests from ConwayCell_display
+[ RUN      ] ConwayCell_display.is_alive
+[       OK ] ConwayCell_display.is_alive (3 ms)
+[ RUN      ] ConwayCell_display.is_dead
+[       OK ] ConwayCell_display.is_dead (3 ms)
+[ RUN      ] ConwayCell_display.toggled
+[       OK ] ConwayCell_display.toggled (3 ms)
+[----------] 3 tests from ConwayCell_display (9 ms total)
+
+[----------] 3 tests from ConwayCell_check_evolve
+[ RUN      ] ConwayCell_check_evolve.become_alive
+[       OK ] ConwayCell_check_evolve.become_alive (17 ms)
+[ RUN      ] ConwayCell_check_evolve.become_dead
+[       OK ] ConwayCell_check_evolve.become_dead (6 ms)
+[ RUN      ] ConwayCell_check_evolve.both
+[       OK ] ConwayCell_check_evolve.both (5 ms)
+[----------] 3 tests from ConwayCell_check_evolve (28 ms total)
+
+[----------] 2 tests from ConwayCell_clone
+[ RUN      ] ConwayCell_clone.test_alive
+[       OK ] ConwayCell_clone.test_alive (4 ms)
+[ RUN      ] ConwayCell_clone.test_dead
+[       OK ] ConwayCell_clone.test_dead (4 ms)
+[----------] 2 tests from ConwayCell_clone (8 ms total)
+
+[----------] 4 tests from FredkinCell_constructor
+[ RUN      ] FredkinCell_constructor.number
+[       OK ] FredkinCell_constructor.number (4 ms)
+[ RUN      ] FredkinCell_constructor.plus
+[       OK ] FredkinCell_constructor.plus (4 ms)
+[ RUN      ] FredkinCell_constructor.minus
+[       OK ] FredkinCell_constructor.minus (3 ms)
+[ RUN      ] FredkinCell_constructor.other
+[       OK ] FredkinCell_constructor.other (4 ms)
+[----------] 4 tests from FredkinCell_constructor (15 ms total)
+
+[----------] 4 tests from FredkinCell_display
+[ RUN      ] FredkinCell_display.alive_number_0
+[       OK ] FredkinCell_display.alive_number_0 (3 ms)
+[ RUN      ] FredkinCell_display.alive_number_9
+[       OK ] FredkinCell_display.alive_number_9 (3 ms)
+[ RUN      ] FredkinCell_display.alive_plus
+[       OK ] FredkinCell_display.alive_plus (2 ms)
+[ RUN      ] FredkinCell_display.dead
+[       OK ] FredkinCell_display.dead (2 ms)
+[----------] 4 tests from FredkinCell_display (11 ms total)
+
+[----------] 4 tests from FredkinCell_check_evolve
+[ RUN      ] FredkinCell_check_evolve.dead_not_evolve
+[       OK ] FredkinCell_check_evolve.dead_not_evolve (7 ms)
+[ RUN      ] FredkinCell_check_evolve.dead_evolve
+[       OK ] FredkinCell_check_evolve.dead_evolve (4 ms)
+[ RUN      ] FredkinCell_check_evolve.alive_not_evolve
+[       OK ] FredkinCell_check_evolve.alive_not_evolve (5 ms)
+[ RUN      ] FredkinCell_check_evolve.alive_evolve
+[       OK ] FredkinCell_check_evolve.alive_evolve (5 ms)
+[----------] 4 tests from FredkinCell_check_evolve (23 ms total)
+
+[----------] 3 tests from FredkinCell_clone
+[ RUN      ] FredkinCell_clone.test_alive
+[       OK ] FredkinCell_clone.test_alive (5 ms)
+[ RUN      ] FredkinCell_clone.test_alive_plus
+[       OK ] FredkinCell_clone.test_alive_plus (3 ms)
+[ RUN      ] FredkinCell_clone.test_dead
+[       OK ] FredkinCell_clone.test_dead (3 ms)
+[----------] 3 tests from FredkinCell_clone (12 ms total)
+
+[----------] 5 tests from Cell_copy_constructor
+[ RUN      ] Cell_copy_constructor.copy_alive_cc
+[       OK ] Cell_copy_constructor.copy_alive_cc (5 ms)
+[ RUN      ] Cell_copy_constructor.copy_dead_cc
+[       OK ] Cell_copy_constructor.copy_dead_cc (3 ms)
+[ RUN      ] Cell_copy_constructor.copy_alive_fc
+[       OK ] Cell_copy_constructor.copy_alive_fc (4 ms)
+[ RUN      ] Cell_copy_constructor.copt_alive_fc_2
+[       OK ] Cell_copy_constructor.copt_alive_fc_2 (3 ms)
+[ RUN      ] Cell_copy_constructor.copy_dead_fc
+[       OK ] Cell_copy_constructor.copy_dead_fc (3 ms)
+[----------] 5 tests from Cell_copy_constructor (19 ms total)
+
+[----------] 5 tests from Cell_copy_assignment
+[ RUN      ] Cell_copy_assignment.copy_assignment_alive_cc
+[       OK ] Cell_copy_assignment.copy_assignment_alive_cc (4 ms)
+[ RUN      ] Cell_copy_assignment.copy_assignment_dead_cc
+[       OK ] Cell_copy_assignment.copy_assignment_dead_cc (3 ms)
+[ RUN      ] Cell_copy_assignment.copy_assignment_alive_fc
+[       OK ] Cell_copy_assignment.copy_assignment_alive_fc (3 ms)
+[ RUN      ] Cell_copy_assignment.copy_assignment_alive_fc_2
+[       OK ] Cell_copy_assignment.copy_assignment_alive_fc_2 (3 ms)
+[ RUN      ] Cell_copy_assignment.copy_assignment_dead_fc
+[       OK ] Cell_copy_assignment.copy_assignment_dead_fc (3 ms)
+[----------] 5 tests from Cell_copy_assignment (17 ms total)
+
+[----------] 4 tests from Cell_toggle
+[ RUN      ] Cell_toggle.CC_alive
+[       OK ] Cell_toggle.CC_alive (3 ms)
+[ RUN      ] Cell_toggle.CC_dead
+[       OK ] Cell_toggle.CC_dead (3 ms)
+[ RUN      ] Cell_toggle.FC_alive
+[       OK ] Cell_toggle.FC_alive (2 ms)
+[ RUN      ] Cell_toggle.FC_dead
+[       OK ] Cell_toggle.FC_dead (2 ms)
+[----------] 4 tests from Cell_toggle (13 ms total)
+
+[----------] 5 tests from Cell_display
+[ RUN      ] Cell_display.CC_1
+[       OK ] Cell_display.CC_1 (3 ms)
+[ RUN      ] Cell_display.CC_2
+[       OK ] Cell_display.CC_2 (2 ms)
+[ RUN      ] Cell_display.FC_1
+[       OK ] Cell_display.FC_1 (2 ms)
+[ RUN      ] Cell_display.FC_2
+[       OK ] Cell_display.FC_2 (3 ms)
+[ RUN      ] Cell_display.FC_3
+[       OK ] Cell_display.FC_3 (3 ms)
+[----------] 5 tests from Cell_display (14 ms total)
+
+[----------] 3 tests from Cell_check_evolve
+[ RUN      ] Cell_check_evolve.FC_to_CC
+[       OK ] Cell_check_evolve.FC_to_CC (7 ms)
+[ RUN      ] Cell_check_evolve.become_dead_CC
+[       OK ] Cell_check_evolve.become_dead_CC (5 ms)
+[ RUN      ] Cell_check_evolve.become_alive_FC
+[       OK ] Cell_check_evolve.become_alive_FC (4 ms)
+[----------] 3 tests from Cell_check_evolve (16 ms total)
+
+[----------] 4 tests from Cell_is_alive
+[ RUN      ] Cell_is_alive.CC_alive
+[       OK ] Cell_is_alive.CC_alive (3 ms)
+[ RUN      ] Cell_is_alive.CC_dead
+[       OK ] Cell_is_alive.CC_dead (3 ms)
+[ RUN      ] Cell_is_alive.FC_alive
+[       OK ] Cell_is_alive.FC_alive (3 ms)
+[ RUN      ] Cell_is_alive.FC_dead
+[       OK ] Cell_is_alive.FC_dead (2 ms)
+[----------] 4 tests from Cell_is_alive (12 ms total)
+
+[----------] 3 tests from Life_constructor
+[ RUN      ] Life_constructor.cc_2
+[       OK ] Life_constructor.cc_2 (63 ms)
+[ RUN      ] Life_constructor.fc_1
+[       OK ] Life_constructor.fc_1 (53 ms)
+[ RUN      ] Life_constructor.ce
+[       OK ] Life_constructor.ce (55 ms)
+[----------] 3 tests from Life_constructor (171 ms total)
+
+[----------] 3 tests from Life_display_world
+[ RUN      ] Life_display_world.line
+[       OK ] Life_display_world.line (14 ms)
+[ RUN      ] Life_display_world.2x2
+[       OK ] Life_display_world.2x2 (34 ms)
+[ RUN      ] Life_display_world.3x3
+[       OK ] Life_display_world.3x3 (6 ms)
+[----------] 3 tests from Life_display_world (56 ms total)
+
+[----------] Global test environment tear-down
+[==========] 66 tests from 18 test cases ran. (551 ms total)
+[  PASSED  ] 66 tests.
+==5546== 
+==5546== HEAP SUMMARY:
+==5546==     in use at exit: 72,704 bytes in 1 blocks
+==5546==   total heap usage: 1,802 allocs, 1,801 frees, 285,400 bytes allocated
+==5546== 
+==5546== LEAK SUMMARY:
+==5546==    definitely lost: 0 bytes in 0 blocks
+==5546==    indirectly lost: 0 bytes in 0 blocks
+==5546==      possibly lost: 0 bytes in 0 blocks
+==5546==    still reachable: 72,704 bytes in 1 blocks
+==5546==         suppressed: 0 bytes in 0 blocks
+==5546== Rerun with --leak-check=full to see details of leaked memory
+==5546== 
+==5546== For counts of detected and suppressed errors, rerun with: -v
+==5546== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:98.72% of 156
+Branches executed:100.00% of 172
+Taken at least once:82.56% of 172
+Calls executed:88.48% of 165
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 286
+Branches executed:61.36% of 1760
+Taken at least once:30.68% of 1760
+Calls executed:52.09% of 2229
+Creating 'TestLife.c++.gcov'
