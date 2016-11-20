@@ -1,0 +1,225 @@
+==18365== Memcheck, a memory error detector
+==18365== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==18365== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==18365== Command: ./TestLife
+==18365== 
+Running main() from gtest_main.cc
+[==========] Running 92 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 92 tests from LifeFixture
+[ RUN      ] LifeFixture.LifeDefaultConstructor0
+[       OK ] LifeFixture.LifeDefaultConstructor0 (17 ms)
+[ RUN      ] LifeFixture.LifeDefaultConstructor1
+[       OK ] LifeFixture.LifeDefaultConstructor1 (2 ms)
+[ RUN      ] LifeFixture.LifeDefaultConstructor2
+[       OK ] LifeFixture.LifeDefaultConstructor2 (2 ms)
+[ RUN      ] LifeFixture.LifeConstructor0
+[       OK ] LifeFixture.LifeConstructor0 (11 ms)
+[ RUN      ] LifeFixture.LifeConstructor1
+[       OK ] LifeFixture.LifeConstructor1 (2 ms)
+[ RUN      ] LifeFixture.LifeConstructor2
+[       OK ] LifeFixture.LifeConstructor2 (2 ms)
+[ RUN      ] LifeFixture.LifeAddLine0
+[       OK ] LifeFixture.LifeAddLine0 (6 ms)
+[ RUN      ] LifeFixture.LifeAddLine1
+[       OK ] LifeFixture.LifeAddLine1 (4 ms)
+[ RUN      ] LifeFixture.LifeAddLine2
+[       OK ] LifeFixture.LifeAddLine2 (5 ms)
+[ RUN      ] LifeFixture.LifeDrawMap0
+[       OK ] LifeFixture.LifeDrawMap0 (10 ms)
+[ RUN      ] LifeFixture.LifeDrawMap1
+[       OK ] LifeFixture.LifeDrawMap1 (7 ms)
+[ RUN      ] LifeFixture.LifeDrawMap2
+[       OK ] LifeFixture.LifeDrawMap2 (4 ms)
+[ RUN      ] LifeFixture.LifeUpdate0
+[       OK ] LifeFixture.LifeUpdate0 (24 ms)
+[ RUN      ] LifeFixture.LifeUpdate1
+[       OK ] LifeFixture.LifeUpdate1 (6 ms)
+[ RUN      ] LifeFixture.LifeUpdate2
+[       OK ] LifeFixture.LifeUpdate2 (4 ms)
+[ RUN      ] LifeFixture.LifePlay0
+[       OK ] LifeFixture.LifePlay0 (6 ms)
+[ RUN      ] LifeFixture.LifePlay1
+[       OK ] LifeFixture.LifePlay1 (4 ms)
+[ RUN      ] LifeFixture.LifePlay2
+[       OK ] LifeFixture.LifePlay2 (5 ms)
+[ RUN      ] LifeFixture.CellDefaultConstructor0
+[       OK ] LifeFixture.CellDefaultConstructor0 (1 ms)
+[ RUN      ] LifeFixture.CellDefaultConstructor1
+[       OK ] LifeFixture.CellDefaultConstructor1 (1 ms)
+[ RUN      ] LifeFixture.CellDefaultConstructor2
+[       OK ] LifeFixture.CellDefaultConstructor2 (2 ms)
+[ RUN      ] LifeFixture.CellConstructor0_AC_alive
+[       OK ] LifeFixture.CellConstructor0_AC_alive (4 ms)
+[ RUN      ] LifeFixture.CellConstructor1_AC_alive
+[       OK ] LifeFixture.CellConstructor1_AC_alive (3 ms)
+[ RUN      ] LifeFixture.CellConstructor2_AC_alive
+[       OK ] LifeFixture.CellConstructor2_AC_alive (4 ms)
+[ RUN      ] LifeFixture.CellConstructor3_AC_alive
+[       OK ] LifeFixture.CellConstructor3_AC_alive (3 ms)
+[ RUN      ] LifeFixture.CellConstructor0_Cell_alive
+[       OK ] LifeFixture.CellConstructor0_Cell_alive (3 ms)
+[ RUN      ] LifeFixture.CellConstructor1_Cell_alive
+[       OK ] LifeFixture.CellConstructor1_Cell_alive (4 ms)
+[ RUN      ] LifeFixture.CellConstructor2_Cell_alive
+[       OK ] LifeFixture.CellConstructor2_Cell_alive (4 ms)
+[ RUN      ] LifeFixture.CellConstructor3_Cell_alive
+[       OK ] LifeFixture.CellConstructor3_Cell_alive (3 ms)
+[ RUN      ] LifeFixture.CellCopyConstructor0
+[       OK ] LifeFixture.CellCopyConstructor0 (4 ms)
+[ RUN      ] LifeFixture.CellCopyConstructor1
+[       OK ] LifeFixture.CellCopyConstructor1 (4 ms)
+[ RUN      ] LifeFixture.CellCopyConstructor2
+[       OK ] LifeFixture.CellCopyConstructor2 (4 ms)
+[ RUN      ] LifeFixture.CellCopyAssignment0
+[       OK ] LifeFixture.CellCopyAssignment0 (3 ms)
+[ RUN      ] LifeFixture.CellCopyAssignment1
+[       OK ] LifeFixture.CellCopyAssignment1 (4 ms)
+[ RUN      ] LifeFixture.CellCopyAssignment2
+[       OK ] LifeFixture.CellCopyAssignment2 (6 ms)
+[ RUN      ] LifeFixture.CellClone0
+[       OK ] LifeFixture.CellClone0 (4 ms)
+[ RUN      ] LifeFixture.CellClone1
+[       OK ] LifeFixture.CellClone1 (3 ms)
+[ RUN      ] LifeFixture.CellClone2
+[       OK ] LifeFixture.CellClone2 (3 ms)
+[ RUN      ] LifeFixture.CellAct0
+[       OK ] LifeFixture.CellAct0 (15 ms)
+[ RUN      ] LifeFixture.CellAct1
+[       OK ] LifeFixture.CellAct1 (19 ms)
+[ RUN      ] LifeFixture.CellAct2
+[       OK ] LifeFixture.CellAct2 (15 ms)
+[ RUN      ] LifeFixture.CellAct3
+[       OK ] LifeFixture.CellAct3 (17 ms)
+[ RUN      ] LifeFixture.CellAct4
+[       OK ] LifeFixture.CellAct4 (15 ms)
+[ RUN      ] LifeFixture.CellAct5
+[       OK ] LifeFixture.CellAct5 (15 ms)
+[ RUN      ] LifeFixture.CellAct6
+[       OK ] LifeFixture.CellAct6 (14 ms)
+[ RUN      ] LifeFixture.CellAct7
+[       OK ] LifeFixture.CellAct7 (16 ms)
+[ RUN      ] LifeFixture.CellAct8
+[       OK ] LifeFixture.CellAct8 (17 ms)
+[ RUN      ] LifeFixture.CellPrintSelf0
+[       OK ] LifeFixture.CellPrintSelf0 (3 ms)
+[ RUN      ] LifeFixture.CellPrintSelf1
+[       OK ] LifeFixture.CellPrintSelf1 (2 ms)
+[ RUN      ] LifeFixture.CellPrintSelf2
+[       OK ] LifeFixture.CellPrintSelf2 (9 ms)
+[ RUN      ] LifeFixture.CellPrintSelf3
+[       OK ] LifeFixture.CellPrintSelf3 (3 ms)
+[ RUN      ] LifeFixture.ConwayCellPrintSelf0
+[       OK ] LifeFixture.ConwayCellPrintSelf0 (2 ms)
+[ RUN      ] LifeFixture.ConwayCellPrintSelf1
+[       OK ] LifeFixture.ConwayCellPrintSelf1 (2 ms)
+[ RUN      ] LifeFixture.ConwayCellAct0
+[       OK ] LifeFixture.ConwayCellAct0 (1 ms)
+[ RUN      ] LifeFixture.ConwayCellAct1
+[       OK ] LifeFixture.ConwayCellAct1 (2 ms)
+[ RUN      ] LifeFixture.ConwayCellAct2
+[       OK ] LifeFixture.ConwayCellAct2 (2 ms)
+[ RUN      ] LifeFixture.ConwayCellAct3
+[       OK ] LifeFixture.ConwayCellAct3 (2 ms)
+[ RUN      ] LifeFixture.ConwayCellAct4
+[       OK ] LifeFixture.ConwayCellAct4 (3 ms)
+[ RUN      ] LifeFixture.ConwayCellAct5
+[       OK ] LifeFixture.ConwayCellAct5 (1 ms)
+[ RUN      ] LifeFixture.ConwayCellAct6
+[       OK ] LifeFixture.ConwayCellAct6 (1 ms)
+[ RUN      ] LifeFixture.ConwayCellAct7
+[       OK ] LifeFixture.ConwayCellAct7 (2 ms)
+[ RUN      ] LifeFixture.ConwayCellClone0
+[       OK ] LifeFixture.ConwayCellClone0 (2 ms)
+[ RUN      ] LifeFixture.ConwayCellClone1
+[       OK ] LifeFixture.ConwayCellClone1 (3 ms)
+[ RUN      ] LifeFixture.FredkinCellDefaultConstructor0
+[       OK ] LifeFixture.FredkinCellDefaultConstructor0 (1 ms)
+[ RUN      ] LifeFixture.FredkinCellConstructor0
+[       OK ] LifeFixture.FredkinCellConstructor0 (1 ms)
+[ RUN      ] LifeFixture.FredkinCellConstructor1
+[       OK ] LifeFixture.FredkinCellConstructor1 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellConstructor2
+[       OK ] LifeFixture.FredkinCellConstructor2 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellCopyConstructor0
+[       OK ] LifeFixture.FredkinCellCopyConstructor0 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellCopyConstructor1
+[       OK ] LifeFixture.FredkinCellCopyConstructor1 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellCopyConstructor2
+[       OK ] LifeFixture.FredkinCellCopyConstructor2 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellEqualsOperator0
+[       OK ] LifeFixture.FredkinCellEqualsOperator0 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellEqualsOperator1
+[       OK ] LifeFixture.FredkinCellEqualsOperator1 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellEqualsOperator2
+[       OK ] LifeFixture.FredkinCellEqualsOperator2 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellPrintSelf0
+[       OK ] LifeFixture.FredkinCellPrintSelf0 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellPrintSelf1
+[       OK ] LifeFixture.FredkinCellPrintSelf1 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellPrintSelf2
+[       OK ] LifeFixture.FredkinCellPrintSelf2 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellAct0
+[       OK ] LifeFixture.FredkinCellAct0 (1 ms)
+[ RUN      ] LifeFixture.FredkinCellAct1
+[       OK ] LifeFixture.FredkinCellAct1 (1 ms)
+[ RUN      ] LifeFixture.FredkinCellAct2
+[       OK ] LifeFixture.FredkinCellAct2 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellAct3
+[       OK ] LifeFixture.FredkinCellAct3 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellAct4
+[       OK ] LifeFixture.FredkinCellAct4 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellAct5
+[       OK ] LifeFixture.FredkinCellAct5 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellAct6
+[       OK ] LifeFixture.FredkinCellAct6 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellAct7
+[       OK ] LifeFixture.FredkinCellAct7 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellAct8
+[       OK ] LifeFixture.FredkinCellAct8 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellAct9
+[       OK ] LifeFixture.FredkinCellAct9 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellAct10
+[       OK ] LifeFixture.FredkinCellAct10 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellAct11
+[       OK ] LifeFixture.FredkinCellAct11 (3 ms)
+[ RUN      ] LifeFixture.FredkinCellAct12
+[       OK ] LifeFixture.FredkinCellAct12 (3 ms)
+[ RUN      ] LifeFixture.FredkinCellAct13
+[       OK ] LifeFixture.FredkinCellAct13 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellClone0
+[       OK ] LifeFixture.FredkinCellClone0 (2 ms)
+[ RUN      ] LifeFixture.FredkinCellClone1
+[       OK ] LifeFixture.FredkinCellClone1 (2 ms)
+[----------] 92 tests from LifeFixture (445 ms total)
+
+[----------] Global test environment tear-down
+[==========] 92 tests from 1 test case ran. (471 ms total)
+[  PASSED  ] 92 tests.
+==18365== 
+==18365== HEAP SUMMARY:
+==18365==     in use at exit: 2,208 bytes in 192 blocks
+==18365==   total heap usage: 1,991 allocs, 1,799 frees, 211,777 bytes allocated
+==18365== 
+==18365== LEAK SUMMARY:
+==18365==    definitely lost: 2,208 bytes in 192 blocks
+==18365==    indirectly lost: 0 bytes in 0 blocks
+==18365==      possibly lost: 0 bytes in 0 blocks
+==18365==    still reachable: 0 bytes in 0 blocks
+==18365==         suppressed: 0 bytes in 0 blocks
+==18365== Rerun with --leak-check=full to see details of leaked memory
+==18365== 
+==18365== For counts of detected and suppressed errors, rerun with: -v
+==18365== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:97.42% of 233
+Branches executed:97.89% of 190
+Taken at least once:84.21% of 190
+Calls executed:88.20% of 178
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 639
+Branches executed:65.20% of 3126
+Taken at least once:32.60% of 3126
+Calls executed:53.12% of 4360
+Creating 'TestLife.c++.gcov'
