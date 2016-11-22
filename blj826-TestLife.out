@@ -1,0 +1,189 @@
+Running main() from gtest_main.cc
+[==========] Running 87 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 51 tests from LifeFixture
+[ RUN      ] LifeFixture.toString1
+[       OK ] LifeFixture.toString1 (0 ms)
+[ RUN      ] LifeFixture.toString2
+[       OK ] LifeFixture.toString2 (0 ms)
+[ RUN      ] LifeFixture.toString3
+[       OK ] LifeFixture.toString3 (0 ms)
+[ RUN      ] LifeFixture.toString4
+[       OK ] LifeFixture.toString4 (0 ms)
+[ RUN      ] LifeFixture.toString5
+[       OK ] LifeFixture.toString5 (0 ms)
+[ RUN      ] LifeFixture.toString6
+[       OK ] LifeFixture.toString6 (0 ms)
+[ RUN      ] LifeFixture.toString7
+[       OK ] LifeFixture.toString7 (0 ms)
+[ RUN      ] LifeFixture.toString8
+[       OK ] LifeFixture.toString8 (0 ms)
+[ RUN      ] LifeFixture.toString9
+[       OK ] LifeFixture.toString9 (0 ms)
+[ RUN      ] LifeFixture.toString10
+[       OK ] LifeFixture.toString10 (0 ms)
+[ RUN      ] LifeFixture.toString11
+[       OK ] LifeFixture.toString11 (0 ms)
+[ RUN      ] LifeFixture.Alive1
+[       OK ] LifeFixture.Alive1 (0 ms)
+[ RUN      ] LifeFixture.Alive2
+[       OK ] LifeFixture.Alive2 (0 ms)
+[ RUN      ] LifeFixture.Alive3
+[       OK ] LifeFixture.Alive3 (0 ms)
+[ RUN      ] LifeFixture.Alive4
+[       OK ] LifeFixture.Alive4 (0 ms)
+[ RUN      ] LifeFixture.Alive5
+[       OK ] LifeFixture.Alive5 (0 ms)
+[ RUN      ] LifeFixture.Alive6
+[       OK ] LifeFixture.Alive6 (0 ms)
+[ RUN      ] LifeFixture.Alive7
+[       OK ] LifeFixture.Alive7 (0 ms)
+[ RUN      ] LifeFixture.Alive8
+[       OK ] LifeFixture.Alive8 (0 ms)
+[ RUN      ] LifeFixture.Life0
+[       OK ] LifeFixture.Life0 (0 ms)
+[ RUN      ] LifeFixture.Life1
+[       OK ] LifeFixture.Life1 (0 ms)
+[ RUN      ] LifeFixture.Life2
+[       OK ] LifeFixture.Life2 (0 ms)
+[ RUN      ] LifeFixture.Life3
+[       OK ] LifeFixture.Life3 (0 ms)
+[ RUN      ] LifeFixture.Life4
+[       OK ] LifeFixture.Life4 (0 ms)
+[ RUN      ] LifeFixture.Life5
+[       OK ] LifeFixture.Life5 (0 ms)
+[ RUN      ] LifeFixture.Mutate1
+[       OK ] LifeFixture.Mutate1 (0 ms)
+[ RUN      ] LifeFixture.Mutate2
+[       OK ] LifeFixture.Mutate2 (0 ms)
+[ RUN      ] LifeFixture.Mutate3
+[       OK ] LifeFixture.Mutate3 (0 ms)
+[ RUN      ] LifeFixture.Mutate4
+[       OK ] LifeFixture.Mutate4 (0 ms)
+[ RUN      ] LifeFixture.Mutate5
+[       OK ] LifeFixture.Mutate5 (0 ms)
+[ RUN      ] LifeFixture.Mutate6
+[       OK ] LifeFixture.Mutate6 (0 ms)
+[ RUN      ] LifeFixture.Mutate7
+[       OK ] LifeFixture.Mutate7 (0 ms)
+[ RUN      ] LifeFixture.Mutate8
+[       OK ] LifeFixture.Mutate8 (0 ms)
+[ RUN      ] LifeFixture.Mutate9
+[       OK ] LifeFixture.Mutate9 (0 ms)
+[ RUN      ] LifeFixture.Neighbors1
+[       OK ] LifeFixture.Neighbors1 (0 ms)
+[ RUN      ] LifeFixture.Neighbors2
+[       OK ] LifeFixture.Neighbors2 (0 ms)
+[ RUN      ] LifeFixture.Neighbors3
+[       OK ] LifeFixture.Neighbors3 (0 ms)
+[ RUN      ] LifeFixture.Neighbors4
+[       OK ] LifeFixture.Neighbors4 (0 ms)
+[ RUN      ] LifeFixture.Neighbors5
+[       OK ] LifeFixture.Neighbors5 (0 ms)
+[ RUN      ] LifeFixture.Neighbors6
+[       OK ] LifeFixture.Neighbors6 (0 ms)
+[ RUN      ] LifeFixture.Neighbors7
+[       OK ] LifeFixture.Neighbors7 (0 ms)
+[ RUN      ] LifeFixture.Neighbors8
+[       OK ] LifeFixture.Neighbors8 (0 ms)
+[ RUN      ] LifeFixture.Neighbors9
+[       OK ] LifeFixture.Neighbors9 (0 ms)
+[ RUN      ] LifeFixture.Neighbors10
+[       OK ] LifeFixture.Neighbors10 (0 ms)
+[ RUN      ] LifeFixture.Evolve1
+[       OK ] LifeFixture.Evolve1 (0 ms)
+[ RUN      ] LifeFixture.Evolve2
+[       OK ] LifeFixture.Evolve2 (0 ms)
+[ RUN      ] LifeFixture.Evolve3
+[       OK ] LifeFixture.Evolve3 (0 ms)
+[ RUN      ] LifeFixture.Evolve4
+[       OK ] LifeFixture.Evolve4 (0 ms)
+[ RUN      ] LifeFixture.Evolve5
+[       OK ] LifeFixture.Evolve5 (0 ms)
+[ RUN      ] LifeFixture.clone1
+[       OK ] LifeFixture.clone1 (0 ms)
+[ RUN      ] LifeFixture.clone2
+[       OK ] LifeFixture.clone2 (0 ms)
+[----------] 51 tests from LifeFixture (2 ms total)
+
+[----------] 18 tests from MultiTest/0, where TypeParam = ConwayCell
+[ RUN      ] MultiTest/0.getBoundsExplicit1
+[       OK ] MultiTest/0.getBoundsExplicit1 (0 ms)
+[ RUN      ] MultiTest/0.getBoundsExplicit2
+[       OK ] MultiTest/0.getBoundsExplicit2 (0 ms)
+[ RUN      ] MultiTest/0.getBoundsExplicit3
+[       OK ] MultiTest/0.getBoundsExplicit3 (0 ms)
+[ RUN      ] MultiTest/0.getBoundsExplicit4
+[       OK ] MultiTest/0.getBoundsExplicit4 (0 ms)
+[ RUN      ] MultiTest/0.getBoundsExplicit5
+[       OK ] MultiTest/0.getBoundsExplicit5 (0 ms)
+[ RUN      ] MultiTest/0.EvolveExplicit1
+[       OK ] MultiTest/0.EvolveExplicit1 (0 ms)
+[ RUN      ] MultiTest/0.EvolveExplicit2
+[       OK ] MultiTest/0.EvolveExplicit2 (0 ms)
+[ RUN      ] MultiTest/0.EvolveExplicit3
+[       OK ] MultiTest/0.EvolveExplicit3 (0 ms)
+[ RUN      ] MultiTest/0.EvolveExplicit4
+[       OK ] MultiTest/0.EvolveExplicit4 (0 ms)
+[ RUN      ] MultiTest/0.EvolveExplicit5
+[       OK ] MultiTest/0.EvolveExplicit5 (0 ms)
+[ RUN      ] MultiTest/0.MoreLife1
+[       OK ] MultiTest/0.MoreLife1 (0 ms)
+[ RUN      ] MultiTest/0.MoreLife2
+[       OK ] MultiTest/0.MoreLife2 (0 ms)
+[ RUN      ] MultiTest/0.MoreLife3
+[       OK ] MultiTest/0.MoreLife3 (0 ms)
+[ RUN      ] MultiTest/0.MoreLife4
+[       OK ] MultiTest/0.MoreLife4 (0 ms)
+[ RUN      ] MultiTest/0.MoreLife5
+[       OK ] MultiTest/0.MoreLife5 (0 ms)
+[ RUN      ] MultiTest/0.MoreLife6
+[       OK ] MultiTest/0.MoreLife6 (0 ms)
+[ RUN      ] MultiTest/0.MoreLife7
+[       OK ] MultiTest/0.MoreLife7 (0 ms)
+[ RUN      ] MultiTest/0.MoreLife8
+[       OK ] MultiTest/0.MoreLife8 (0 ms)
+[----------] 18 tests from MultiTest/0 (0 ms total)
+
+[----------] 18 tests from MultiTest/1, where TypeParam = FredkinCell
+[ RUN      ] MultiTest/1.getBoundsExplicit1
+[       OK ] MultiTest/1.getBoundsExplicit1 (0 ms)
+[ RUN      ] MultiTest/1.getBoundsExplicit2
+[       OK ] MultiTest/1.getBoundsExplicit2 (0 ms)
+[ RUN      ] MultiTest/1.getBoundsExplicit3
+[       OK ] MultiTest/1.getBoundsExplicit3 (0 ms)
+[ RUN      ] MultiTest/1.getBoundsExplicit4
+[       OK ] MultiTest/1.getBoundsExplicit4 (0 ms)
+[ RUN      ] MultiTest/1.getBoundsExplicit5
+[       OK ] MultiTest/1.getBoundsExplicit5 (0 ms)
+[ RUN      ] MultiTest/1.EvolveExplicit1
+[       OK ] MultiTest/1.EvolveExplicit1 (0 ms)
+[ RUN      ] MultiTest/1.EvolveExplicit2
+[       OK ] MultiTest/1.EvolveExplicit2 (0 ms)
+[ RUN      ] MultiTest/1.EvolveExplicit3
+[       OK ] MultiTest/1.EvolveExplicit3 (0 ms)
+[ RUN      ] MultiTest/1.EvolveExplicit4
+[       OK ] MultiTest/1.EvolveExplicit4 (0 ms)
+[ RUN      ] MultiTest/1.EvolveExplicit5
+[       OK ] MultiTest/1.EvolveExplicit5 (0 ms)
+[ RUN      ] MultiTest/1.MoreLife1
+[       OK ] MultiTest/1.MoreLife1 (1 ms)
+[ RUN      ] MultiTest/1.MoreLife2
+[       OK ] MultiTest/1.MoreLife2 (0 ms)
+[ RUN      ] MultiTest/1.MoreLife3
+[       OK ] MultiTest/1.MoreLife3 (0 ms)
+[ RUN      ] MultiTest/1.MoreLife4
+[       OK ] MultiTest/1.MoreLife4 (0 ms)
+[ RUN      ] MultiTest/1.MoreLife5
+[       OK ] MultiTest/1.MoreLife5 (0 ms)
+[ RUN      ] MultiTest/1.MoreLife6
+[       OK ] MultiTest/1.MoreLife6 (0 ms)
+[ RUN      ] MultiTest/1.MoreLife7
+[       OK ] MultiTest/1.MoreLife7 (0 ms)
+[ RUN      ] MultiTest/1.MoreLife8
+[       OK ] MultiTest/1.MoreLife8 (0 ms)
+[----------] 18 tests from MultiTest/1 (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 87 tests from 3 test cases ran. (3 ms total)
+[  PASSED  ] 87 tests.
