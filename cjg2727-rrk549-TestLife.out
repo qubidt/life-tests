@@ -1,0 +1,132 @@
+==138973== Memcheck, a memory error detector
+==138973== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==138973== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==138973== Command: ./TestLife
+==138973== 
+Running main() from gtest_main.cc
+[==========] Running 44 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 14 tests from ConwayCell
+[ RUN      ] ConwayCell.Test_Default_Constructor
+[       OK ] ConwayCell.Test_Default_Constructor (7 ms)
+[ RUN      ] ConwayCell.Test_Default_Constructor2
+[       OK ] ConwayCell.Test_Default_Constructor2 (1 ms)
+[ RUN      ] ConwayCell.Test_Copy_Constructor
+[       OK ] ConwayCell.Test_Copy_Constructor (1 ms)
+[ RUN      ] ConwayCell.Test_Copy_Constructor2
+[       OK ] ConwayCell.Test_Copy_Constructor2 (2 ms)
+[ RUN      ] ConwayCell.Test_Do_Turn
+[       OK ] ConwayCell.Test_Do_Turn (2 ms)
+[ RUN      ] ConwayCell.Test_Do_Turn2
+[       OK ] ConwayCell.Test_Do_Turn2 (1 ms)
+[ RUN      ] ConwayCell.Test_Do_Turn3
+[       OK ] ConwayCell.Test_Do_Turn3 (1 ms)
+[ RUN      ] ConwayCell.Test_Do_Turn4
+[       OK ] ConwayCell.Test_Do_Turn4 (1 ms)
+[ RUN      ] ConwayCell.Test_Assignment_Operator
+[       OK ] ConwayCell.Test_Assignment_Operator (2 ms)
+[ RUN      ] ConwayCell.Test_Assignment_Operator2
+[       OK ] ConwayCell.Test_Assignment_Operator2 (1 ms)
+[ RUN      ] ConwayCell.Test_Char_Constructor
+[       OK ] ConwayCell.Test_Char_Constructor (1 ms)
+[ RUN      ] ConwayCell.Test_Char_Constructor2
+[       OK ] ConwayCell.Test_Char_Constructor2 (1 ms)
+[ RUN      ] ConwayCell.Test_Clone
+[       OK ] ConwayCell.Test_Clone (2 ms)
+[ RUN      ] ConwayCell.Test_Clone2
+[       OK ] ConwayCell.Test_Clone2 (2 ms)
+[----------] 14 tests from ConwayCell (37 ms total)
+
+[----------] 17 tests from FredkinCell
+[ RUN      ] FredkinCell.Test_Default_Constructor
+[       OK ] FredkinCell.Test_Default_Constructor (2 ms)
+[ RUN      ] FredkinCell.Test_Default_Constructor2
+[       OK ] FredkinCell.Test_Default_Constructor2 (1 ms)
+[ RUN      ] FredkinCell.Test_Default_Constructor3
+[       OK ] FredkinCell.Test_Default_Constructor3 (2 ms)
+[ RUN      ] FredkinCell.Test_Copy_Constructor
+[       OK ] FredkinCell.Test_Copy_Constructor (2 ms)
+[ RUN      ] FredkinCell.Test_Copy_Constructor2
+[       OK ] FredkinCell.Test_Copy_Constructor2 (1 ms)
+[ RUN      ] FredkinCell.Test_Copy_Constructor3
+[       OK ] FredkinCell.Test_Copy_Constructor3 (2 ms)
+[ RUN      ] FredkinCell.Test_Do_Turn
+[       OK ] FredkinCell.Test_Do_Turn (2 ms)
+[ RUN      ] FredkinCell.Test_Do_Turn2
+[       OK ] FredkinCell.Test_Do_Turn2 (1 ms)
+[ RUN      ] FredkinCell.Test_Do_Turn3
+[       OK ] FredkinCell.Test_Do_Turn3 (1 ms)
+[ RUN      ] FredkinCell.Test_Do_Turn4
+[       OK ] FredkinCell.Test_Do_Turn4 (2 ms)
+[ RUN      ] FredkinCell.Test_Do_Turn5
+[       OK ] FredkinCell.Test_Do_Turn5 (2 ms)
+[ RUN      ] FredkinCell.Test_Assignment_Operator
+[       OK ] FredkinCell.Test_Assignment_Operator (1 ms)
+[ RUN      ] FredkinCell.Test_Assignment_Operator2
+[       OK ] FredkinCell.Test_Assignment_Operator2 (2 ms)
+[ RUN      ] FredkinCell.Test_Char_Constructor
+[       OK ] FredkinCell.Test_Char_Constructor (1 ms)
+[ RUN      ] FredkinCell.Test_Char_Constructor2
+[       OK ] FredkinCell.Test_Char_Constructor2 (1 ms)
+[ RUN      ] FredkinCell.Test_Clone
+[       OK ] FredkinCell.Test_Clone (1 ms)
+[ RUN      ] FredkinCell.Test_Clone2
+[       OK ] FredkinCell.Test_Clone2 (1 ms)
+[----------] 17 tests from FredkinCell (30 ms total)
+
+[----------] 10 tests from Cell
+[ RUN      ] Cell.Test_Copy_Constructor
+[       OK ] Cell.Test_Copy_Constructor (2 ms)
+[ RUN      ] Cell.Test_Copy_Constructor2
+[       OK ] Cell.Test_Copy_Constructor2 (2 ms)
+[ RUN      ] Cell.Test_Do_Turn
+[       OK ] Cell.Test_Do_Turn (2 ms)
+[ RUN      ] Cell.Test_Do_Turn2
+[       OK ] Cell.Test_Do_Turn2 (1 ms)
+[ RUN      ] Cell.Test_Do_Turn3
+[       OK ] Cell.Test_Do_Turn3 (2 ms)
+[ RUN      ] Cell.Test_Do_Turn4
+[       OK ] Cell.Test_Do_Turn4 (2 ms)
+[ RUN      ] Cell.Test_Assignment_Operator
+[       OK ] Cell.Test_Assignment_Operator (3 ms)
+[ RUN      ] Cell.Test_Assignment_Operator2
+[       OK ] Cell.Test_Assignment_Operator2 (2 ms)
+[ RUN      ] Cell.Test_Char_Constructor
+[       OK ] Cell.Test_Char_Constructor (2 ms)
+[ RUN      ] Cell.Test_Char_Constructor2
+[       OK ] Cell.Test_Char_Constructor2 (1 ms)
+[----------] 10 tests from Cell (20 ms total)
+
+[----------] 3 tests from LIFE
+[ RUN      ] LIFE.Test_Constructor
+[       OK ] LIFE.Test_Constructor (32 ms)
+[ RUN      ] LIFE.Test_Running
+[       OK ] LIFE.Test_Running (37 ms)
+[ RUN      ] LIFE.Test_Running2
+[       OK ] LIFE.Test_Running2 (49 ms)
+[----------] 3 tests from LIFE (118 ms total)
+
+[----------] Global test environment tear-down
+[==========] 44 tests from 4 test cases ran. (240 ms total)
+[  PASSED  ] 44 tests.
+==138973== 
+==138973== HEAP SUMMARY:
+==138973==     in use at exit: 0 bytes in 0 blocks
+==138973==   total heap usage: 1,016 allocs, 1,016 frees, 217,471 bytes allocated
+==138973== 
+==138973== All heap blocks were freed -- no leaks are possible
+==138973== 
+==138973== For counts of detected and suppressed errors, rerun with: -v
+==138973== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.h'
+Lines executed:75.61% of 287
+Branches executed:61.45% of 498
+Taken at least once:44.38% of 498
+Calls executed:55.91% of 372
+Creating 'Life.h.gcov'
+File 'TestLife.c++'
+Lines executed:100.00% of 283
+Branches executed:100.00% of 316
+Taken at least once:52.53% of 316
+Calls executed:80.03% of 601
+Creating 'TestLife.c++.gcov'
